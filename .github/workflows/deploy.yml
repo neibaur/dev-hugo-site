@@ -36,7 +36,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.GH_PAT }}
-          external_repository: neibaur.github.io
+          external_repository: neibaur/github.io
           publish_branch: main
           publish_dir: ./public
           commit_message: "Deploying latest build: ${{ github.event.head_commit.message }}"
