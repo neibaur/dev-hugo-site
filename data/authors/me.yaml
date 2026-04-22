@@ -21,17 +21,31 @@ bio: |
   rigor to build robust BI solutions and data architectures for enterprise leaders 
   like General Motors.
 
-  <div class="mt-6 p-4 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50/50 dark:bg-slate-800/50">
-      <h3 class="text-xl font-bold mb-2">Core Certifications</h3>
-      <ul class="list-none p-0 m-0">
-        <li class="mb-2">
-          <span class="font-semibold text-blue-600 dark:text-blue-400">Microsoft Certified: Power BI Data Analyst Associate</span>
-          <br>
-          <span class="text-sm">ID: <span class="text-lg font-bold text-primary-600">PL-300</span> — Issued Dec 2025</span>
-        </li>
-      </ul>
+  <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+    <div class="flex items-center gap-3 mb-5">
+      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100/20 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400">
+        <i class="fas fa-certificate text-lg"></i>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-900 dark:text-white m-0 leading-tight">Core Certifications</h3>
     </div>
-
+    
+    <div class="ml-13">
+      <a href="https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/" 
+        target="_blank" 
+        class="block font-semibold text-blue-600 dark:text-blue-400 hover:underline text-lg">
+        Microsoft Certified: Power BI Data Analyst Associate
+      </a>
+      <p class="text-md mt-1 text-gray-600 dark:text-gray-400">
+        Credential ID: 
+        <a href="https://learn.microsoft.com/api/credentials/share/en-us/IsaacNeibaur-5351/EEAD2C1408383F" 
+          target="_blank" 
+          class="font-mono font-bold text-primary-600 dark:text-primary-400">
+          PL-300
+        </a>
+        <span class="mx-2">•</span> Issued Dec 2025
+      </p>
+    </div>
+  </div>
 affiliations:
   - name: General Motors, Cabrillo Coastal Insurance Agency, Pioneer Hi-Bred
     url: https://gm.com/
