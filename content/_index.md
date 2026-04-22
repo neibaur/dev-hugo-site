@@ -40,10 +40,12 @@ sections:
   - block: resume-experience
     content:
       username: me
+      # This line restricts the block to ONLY your work history
+      data_key: experience 
     design:
       columns: '2' 
       spacing:
-        padding: ['1rem', '0', '1rem', '0'] # Reduced padding to keep it tight
+        padding: ['1rem', '0', '1rem', '0']
   - block: markdown
     content:
       title: '📚 My Research'
