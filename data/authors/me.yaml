@@ -115,21 +115,20 @@ experience:
     start: 2021-02-01
     end: 2025-12-31
     summary: |
-      <span id="general-motors"></span>Served as a technical lead and analytical bridge, translating complex operational data from Oracle and Azure Databricks into actionable insights for leadership. 
+      <span id="general-motors" style="position: relative; top: -100px;"></span>Served as a technical lead and analytical bridge, translating complex operational data from Oracle and Azure Databricks into actionable insights for leadership. 
       * Built Python APIs to automate report refreshes and scheduled email deliveries, significantly improving operational efficiency.
       * Orchestrated reporting workflows using GitHub Actions and Databricks to monitor and recover automated data deliveries.
       * Designed advanced star-schema semantic data models for a large-scale migration to Azure Databricks.
-    button:
-      text: View Project
-      url: /project/gm-analytics/
-      active: false
+    # button:
+    #   text: View Project
+    #   url: /project/gm-analytics/
 
   - role: Systems Analyst
     org: Cabrillo Coastal General Insurance Agency
     start: 2016-06-01
     end: 2021-01-31
     summary: |
-      <span id="cabrillo-coastal"></span>Collaborated with executive leadership to build dashboards and reports providing insights into call volumes and client metrics.
+      <span id="cabrillo-coastal" style="position: relative; top: -100px;"></span>Collaborated with executive leadership to build dashboards and reports providing insights into call volumes and client metrics.
       * Developed custom automation with Python and Selenium to test and bind quotes, streamlining the insurance workflow.
       * Served as the primary technical point of contact for the company’s comparative rater API.
 
@@ -137,8 +136,8 @@ experience:
     org: Pioneer Hi-Bred (Beijing, China)
     start: 2013-06-01
     end: 2015-06-30
-    summary: |
-      <span id="pioneer"></span>Acted as the primary technical liaison between the US corporate office and research sites in China and Australia.
+    summary: | 
+      <span id="pioneer" style="position: relative; top: -100px;"></span>Acted as the primary technical liaison between the US corporate office and research sites in China and Australia.
       * Deployed automated labeling and tracking solutions to modernize legacy hand-written laboratory methods.
 
 skills:
