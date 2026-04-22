@@ -84,19 +84,11 @@ interests:
   - CI/CD & DataOps
   - Cloud Architecture (Azure)
   - Automated Reporting
-
-# 2. Certifications (New custom key)
-certifications:
-  - degree: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)"
-    institution: Microsoft
-    start: 2025-12-01
-    end: 2025-12-01
+  - Python
+  - SQL
+  - Power BI
 
 education:
-  # - degree: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)"
-  #   institution: Microsoft
-  #   start: 2025-12-01
-  #   end: 2025-12-01
   - degree: BS Computer Science
     institution: Oregon State University
     start: 2016-01-04
@@ -106,9 +98,9 @@ education:
     start: 2005-08-24
     end: 2007-08-14
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
+      Focsued on evidence of first transgenic success in a major salt resistant turfgrass.
     button:
-      text: Download dissertation
+      text: Download Dissertation
       url: /uploads/Isaac_Neibaur_Master_Thesis.pdf
       icon: hero/arrow-down-tray
   - degree: BS Botany
@@ -121,10 +113,35 @@ education:
     end: 2003-12-20
 
 experience:
-  - role: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)"
-    org: Microsoft
-    start: 2025-12-01
-    end: 2026-12-01
+  - role: Software Engineer (Operations & Reliability)
+    org: General Motors
+    start: 2021-02-01
+    end: 2025-12-31
+    summary: |
+      Served as a technical lead and analytical bridge, translating complex operational data from Oracle and Azure Databricks into actionable insights for leadership[cite: 8]. 
+      * Built Python APIs to automate report refreshes and scheduled email deliveries, significantly improving operational efficiency[cite: 10].
+      * Orchestrated reporting workflows using GitHub Actions and Databricks to monitor and recover automated data deliveries[cite: 11].
+      * Designed advanced star-schema semantic data models for a large-scale migration to Azure Databricks[cite: 12].
+    button:
+      text: View Project
+      url: /project/gm-analytics/
+
+  - role: Systems Analyst
+    org: Cabrillo Coastal General Insurance Agency
+    start: 2016-06-01
+    end: 2021-01-31
+    summary: |
+      Collaborated with executive leadership to build dashboards and reports providing insights into call volumes and client metrics[cite: 17].
+      * Developed custom automation with Python and Selenium to test and bind quotes, streamlining the insurance workflow[cite: 18].
+      * Served as the primary technical point of contact for the company’s comparative rater API[cite: 19].
+
+  - role: Senior Research Associate
+    org: Pioneer Hi-Bred (Beijing, China)
+    start: 2013-06-01
+    end: 2015-06-30
+    summary: |
+      Acted as the primary technical liaison between the US corporate office and research sites in China and Australia[cite: 21].
+      * Deployed automated labeling and tracking solutions to modernize legacy hand-written laboratory methods[cite: 22].
   # - role: Senior AI Research Scientist
   #   org: Meta AI
   #   start: 2020-01-01

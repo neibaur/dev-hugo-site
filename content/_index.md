@@ -21,7 +21,7 @@ sections:
         url: uploads/Isaac_Neibaur_resume.pdf
       headings:
         about: ''
-        education: 'Education & Certifications'
+        education: 'Education'
         interests: ''
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
@@ -40,8 +40,6 @@ sections:
   - block: resume-experience
     content:
       username: me
-      title: 'Professional Certifications'
-      # Remove 'data_key: certifications' as it may not be supported in your version
     design:
       columns: '2' 
       spacing:
