@@ -52,8 +52,12 @@ bio: |
     </div>
   </div>
 affiliations:
-  - name: General Motors, Cabrillo Coastal Insurance Agency, Pioneer Hi-Bred
-    url: https://gm.com/
+  - name: General Motors
+    url: https://www.gm.com/
+  - name: Cabrillo Coastal Insurance Agency
+    url: https://cabgen.com/
+  - name: Pioneer Hi-Bred
+    url: https://www.pioneer.com/us
 
 links:
   - icon: at-symbol
