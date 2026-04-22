@@ -21,12 +21,17 @@ bio: |
   rigor to build robust BI solutions and data architectures for enterprise leaders 
   like General Motors.
 
-  <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-    <div class="flex items-center gap-3 mb-5">
-      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100/20 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400">
-        <i class="fas fa-certificate text-lg"></i>
+  <div class="mt-4 pt-2 border-t border-gray-200 dark:border-gray-700">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="flex-none flex items-center justify-center w-10 h-10 rounded-full border border-blue-600/30 bg-blue-100/10 dark:border-blue-400/30 dark:bg-blue-500/10">
+        <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 15l-2 5L9 9l11 1 5 2z"></path>
+          <circle cx="12" cy="12" r="10"></circle>
+        </svg>
       </div>
-      <h3 class="text-2xl font-bold text-gray-900 dark:text-white m-0 leading-tight">Core Certifications</h3>
+      <h3 class="text-2xl font-bold text-gray-900 dark:text-white m-0 tracking-tight" style="line-height: 1.2; display: flex; align-items: center;">
+        Core Certifications
+      </h3>
     </div>
     
     <div class="ml-13">
