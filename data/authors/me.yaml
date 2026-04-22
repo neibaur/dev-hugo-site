@@ -54,11 +54,11 @@ bio: |
 
 affiliations:
   - name: General Motors
-    url: /experience
+    url: /experience/#general-motors
   - name: Cabrillo Coastal Insurance Agency
-    url: /experience
+    url: /experience/#cabrillo-coastal-general-insurance-agency
   - name: Pioneer Hi-Bred
-    url: /experience
+    url: /experience/#pioneer-hi-bred
 links:
   - icon: at-symbol
     url: mailto:hello@isaacneibaur.com
@@ -142,30 +142,15 @@ experience:
     summary: |
       Acted as the primary technical liaison between the US corporate office and research sites in China and Australia.
       * Deployed automated labeling and tracking solutions to modernize legacy hand-written laboratory methods.
-  # - role: Senior AI Research Scientist
-  #   org: Meta AI
-  #   start: 2020-01-01
-  #   summary: |
-  #     Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-  #   button:
-  #     text: View portfolio
-  #     url: /
-  #     icon: hero/arrow-down-tray
-  # - role: AI Research Intern
-  #   org: OpenAI
-  #   start: 2019-06-01
-  #   end: 2019-12-31
-  #   summary: |
-  #     Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
 
 skills:
   - name: Technical Skills
     items:
-      - label: Python
+      - label: Python Automation
         level: 5
-      - label: Machine Learning
+      - label: Power BI (DAX/M)
         level: 5
-      - label: Cloud Computing
+      - label: Azure Databricks
         level: 4
   - name: Research & Communication
     items:
@@ -180,13 +165,17 @@ languages:
   - name: English
     level: 5
     label: Native
-  - name: Spanish
+  - name: Mandarin Chinese
     level: 4
     label: Fluent
+  - name: Spanish
+    level: 2
+    label: Basic
+    
 
 awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
+  - title: Hackathon team winner 
+    awarder: General Motor's Geek Week
     date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
+    summary: Team awarded for presenting a working demo of an interactive map for an manufacturing location.
     icon: hero/trophy
