@@ -11,8 +11,8 @@ name:
 postnominals:
   - Master's
 status:
-  icon: "☕️"
-role: Senior BI & Data Analyst with background in DevOps
+  icon: "🌱"
+role: Senior Business Intelligence Engineer Data Engineering & Automation
 bio: |
   I specialize in turning raw complexity into clear business strategy. My journey 
   began in agricultural research, where I designed and managed experiments 
@@ -118,7 +118,7 @@ experience:
       <span id="general-motors" style="position: relative; top: -100px;"></span>Served as a technical lead and analytical bridge, translating complex operational data from Oracle and Azure Databricks into actionable insights for leadership. 
       * Built Python APIs to automate report refreshes and scheduled email deliveries, significantly improving operational efficiency.
       * Orchestrated reporting workflows using GitHub Actions and Databricks to monitor and recover automated data deliveries.
-      * Designed advanced star-schema semantic data models for a large-scale migration to Azure Databricks.
+      * Designed advanced star-schema semantic data models for a large-scale migration from Oracle to Medalion Architecture in Azure Databricks.
     # button:
     #   text: View Project
     #   url: /project/gm-analytics/
@@ -149,7 +149,7 @@ skills:
         level: 5
       - label: Azure Databricks
         level: 4
-  - name: Research & Communication
+  - name: Data Architecture & Governance
     items:
       - label: Stakeholder Management
         level: 5
@@ -173,6 +173,27 @@ languages:
 awards:
   - title: Hackathon team winner 
     awarder: General Motor's Geek Week
-    date: "2022-12-01"
+    date: "2022-11-01"
     summary: Team awarded for presenting a working demo of an interactive map for a manufacturing location.
     icon: hero/trophy
+  - title: Debate team winner 
+    awarder: General Motor's Geek Week
+    date: "2024-06-01"
+    summary: Team awarded for wining debate on why autonomous vehicles are the superior next technology.
+    icon: hero/trophy
+  - title: Secure Code Warrior Champion
+    awarder: General Motor's JEDI (Joint Educational Defense Initative)
+    date: "2024-05-01"
+    summary: Placed in the top three over 50 plus competitors from various roles at GM.
+    icon: hero/trophy
+  - title: Geek Week Overall Annual Winner!
+    awarder: General Motor's Geek Week
+    date: "2022"
+    summary: Awarded third place over company wide competition by earning a high sum of Geek Week points by the end of the year.
+    icon: hero/trophy
+  - title: Geek Week Overall Annual Winner!
+    awarder: General Motor's Geek Week
+    date: "2024"
+    summary: Awarded second place over company wide competition by earning a high sum of Geek Week points by the end of the year.
+    icon: hero/trophy
+
