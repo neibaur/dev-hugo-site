@@ -51,14 +51,14 @@ bio: |
       </p>
     </div>
   </div>
+
 affiliations:
   - name: General Motors
-    url: https://www.gm.com/
+    url: /experience
   - name: Cabrillo Coastal Insurance Agency
-    url: https://cabgen.com/
+    url: /experience
   - name: Pioneer Hi-Bred
-    url: https://www.pioneer.com/us
-
+    url: /experience
 links:
   - icon: at-symbol
     url: mailto:hello@isaacneibaur.com
