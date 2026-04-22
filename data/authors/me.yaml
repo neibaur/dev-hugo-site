@@ -42,7 +42,7 @@ bio: |
       </a>
       <p class="text-md mt-1 text-gray-600 dark:text-gray-400">
         Credential ID: 
-        <a href="https://learn.microsoft.com/api/credentials/share/en-us/IsaacNeibaur-5351/EEAD2C1408383F" 
+        <a href="https://learn.microsoft.com/api/credentials/share/en-us/IsaacNeibaur/EEAD2C1408383F" 
           target="_blank" 
           class="font-mono font-bold text-primary-600 dark:text-primary-400">
           PL-300
@@ -63,22 +63,27 @@ links:
   - icon: at-symbol
     url: mailto:hello@isaacneibaur.com
     label: E-mail Me
-  - icon: brands/x
-    url: https://isaacneibaur.com
   - icon: brands/github
     url: https://github.com/neibaur
+    label: GitHub
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/isaacneibaur/
+    url: https://www.linkedin.com/in/isaacneibaur
+    label: LinkedIn
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
-
+    url: https://scholar.google.com/citations?view_op=list_works&hl=en&user=wAn0LMQAAAAJ
+    label: Google Scholar
+  - icon: custom/microsoft
+    url: https://learn.microsoft.com/en-us/users/isaacneibaur
+    label: Microsoft Learn
+  - icon: custom/credly
+    url: https://www.credly.com/users/isaacneibaur
+    label: Credly
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Microsoft Fabric & Power BI
+  - Data Engineering (SQL/Python)
+  - CI/CD & DataOps
+  - Cloud Architecture (Azure)
+  - Automated Reporting
 
 # 2. Certifications (New custom key)
 certifications:
