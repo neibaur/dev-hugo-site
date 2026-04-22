@@ -56,9 +56,9 @@ affiliations:
   - name: General Motors
     url: /experience/#general-motors
   - name: Cabrillo Coastal Insurance Agency
-    url: /experience/#cabrillo-coastal-general-insurance-agency
+    url: /experience/#cabrillo-coastal
   - name: Pioneer Hi-Bred
-    url: /experience/#pioneer-hi-bred
+    url: /experience/#pioneer
 links:
   - icon: at-symbol
     url: mailto:hello@isaacneibaur.com
@@ -84,9 +84,6 @@ interests:
   - CI/CD & DataOps
   - Cloud Architecture (Azure)
   - Automated Reporting
-  - Python
-  - SQL
-  - Power BI
 
 education:
   - degree: BS Computer Science
@@ -98,7 +95,7 @@ education:
     start: 2005-08-24
     end: 2007-08-14
     summary: |
-      Focsued on evidence of first transgenic success in a major salt resistant turfgrass.
+      Focused on evidence of first transgenic successes in a major salt resistant turfgrass.
     button:
       text: Download Dissertation
       url: /uploads/Isaac_Neibaur_Master_Thesis.pdf
@@ -118,20 +115,21 @@ experience:
     start: 2021-02-01
     end: 2025-12-31
     summary: |
-      Served as a technical lead and analytical bridge, translating complex operational data from Oracle and Azure Databricks into actionable insights for leadership. 
+      <span id="general-motors"></span>Served as a technical lead and analytical bridge, translating complex operational data from Oracle and Azure Databricks into actionable insights for leadership. 
       * Built Python APIs to automate report refreshes and scheduled email deliveries, significantly improving operational efficiency.
       * Orchestrated reporting workflows using GitHub Actions and Databricks to monitor and recover automated data deliveries.
       * Designed advanced star-schema semantic data models for a large-scale migration to Azure Databricks.
     button:
       text: View Project
       url: /project/gm-analytics/
+      active: false
 
   - role: Systems Analyst
     org: Cabrillo Coastal General Insurance Agency
     start: 2016-06-01
     end: 2021-01-31
     summary: |
-      Collaborated with executive leadership to build dashboards and reports providing insights into call volumes and client metrics.
+      <span id="cabrillo-coastal"></span>Collaborated with executive leadership to build dashboards and reports providing insights into call volumes and client metrics.
       * Developed custom automation with Python and Selenium to test and bind quotes, streamlining the insurance workflow.
       * Served as the primary technical point of contact for the company’s comparative rater API.
 
@@ -140,7 +138,7 @@ experience:
     start: 2013-06-01
     end: 2015-06-30
     summary: |
-      Acted as the primary technical liaison between the US corporate office and research sites in China and Australia.
+      <span id="pioneer"></span>Acted as the primary technical liaison between the US corporate office and research sites in China and Australia.
       * Deployed automated labeling and tracking solutions to modernize legacy hand-written laboratory methods.
 
 skills:
@@ -154,11 +152,11 @@ skills:
         level: 4
   - name: Research & Communication
     items:
-      - label: Academic Writing
+      - label: Stakeholder Management
         level: 5
       - label: Conference Presentations
         level: 4
-      - label: Grant Proposals
+      - label: Technical Documentation
         level: 4
 
 languages:
@@ -177,5 +175,5 @@ awards:
   - title: Hackathon team winner 
     awarder: General Motor's Geek Week
     date: "2022-12-01"
-    summary: Team awarded for presenting a working demo of an interactive map for an manufacturing location.
+    summary: Team awarded for presenting a working demo of an interactive map for a manufacturing location.
     icon: hero/trophy
