@@ -40,9 +40,12 @@ sections:
   - block: resume-experience
     content:
       username: me
-      title: 'Certifications'
+      title: 'Professional Certifications'
+      # Remove 'data_key: certifications' as it may not be supported in your version
     design:
-      is_education_first: true # This will group items together
+      columns: '2' 
+      spacing:
+        padding: ['1rem', '0', '1rem', '0'] # Reduced padding to keep it tight
   - block: markdown
     content:
       title: '📚 My Research'

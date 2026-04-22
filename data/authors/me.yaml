@@ -12,14 +12,25 @@ postnominals:
   - Master's
 status:
   icon: "☕️"
-role: DevOps Engineer with background in Data Analyst and Python Development
+role: Senior BI & Data Analyst with background in DevOps
 bio: |
   I specialize in turning raw complexity into clear business strategy. My journey 
-  began in agricultural research, where I managed designed and managed experiements 
+  began in agricultural research, where I designed and managed experiments 
   to determine transgenic successes to working with large-scale datasets to determine
-  disease resistance andoptimize crop yields. Today, I leverage that same scientific 
+  disease resistance and optimize crop yields. Today, I leverage that same scientific 
   rigor to build robust BI solutions and data architectures for enterprise leaders 
   like General Motors.
+
+  <div class="mt-6 p-4 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50/50 dark:bg-slate-800/50">
+      <h3 class="text-xl font-bold mb-2">Core Certifications</h3>
+      <ul class="list-none p-0 m-0">
+        <li class="mb-2">
+          <span class="font-semibold text-blue-600 dark:text-blue-400">Microsoft Certified: Power BI Data Analyst Associate</span>
+          <br>
+          <span class="text-sm">ID: <span class="text-lg font-bold text-primary-600">PL-300</span> — Issued Dec 2025</span>
+        </li>
+      </ul>
+    </div>
 
 affiliations:
   - name: General Motors, Cabrillo Coastal Insurance Agency, Pioneer Hi-Bred
@@ -46,13 +57,18 @@ interests:
   - Reinforcement Learning
   - AI Ethics
 
+# 2. Certifications (New custom key)
 certifications:
   - degree: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)"
     institution: Microsoft
     start: 2025-12-01
-    end: 2026-12-01
+    end: 2025-12-01
 
 education:
+  # - degree: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)"
+  #   institution: Microsoft
+  #   start: 2025-12-01
+  #   end: 2025-12-01
   - degree: BS Computer Science
     institution: Oregon State University
     start: 2016-01-04
@@ -77,21 +93,25 @@ education:
     end: 2003-12-20
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
-    summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+  - role: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)"
+    org: Microsoft
+    start: 2025-12-01
+    end: 2026-12-01
+  # - role: Senior AI Research Scientist
+  #   org: Meta AI
+  #   start: 2020-01-01
+  #   summary: |
+  #     Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+  #   button:
+  #     text: View portfolio
+  #     url: /
+  #     icon: hero/arrow-down-tray
+  # - role: AI Research Intern
+  #   org: OpenAI
+  #   start: 2019-06-01
+  #   end: 2019-12-31
+  #   summary: |
+  #     Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
 
 skills:
   - name: Technical Skills
