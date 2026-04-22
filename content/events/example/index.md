@@ -166,7 +166,7 @@ slides:
 ---
 
 # My Amazing Talk
-### Your Name
+### Isaac Neibaur
 
 ---
 

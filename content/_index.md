@@ -18,10 +18,10 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/resume.pdf
+        url: uploads/Isaac_Neibaur_resume.pdf
       headings:
         about: ''
-        education: ''
+        education: 'Education & Certifications'
         interests: ''
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
@@ -37,6 +37,12 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+  - block: resume-experience
+    content:
+      username: me
+      title: 'Certifications'
+    design:
+      is_education_first: true # This will group items together
   - block: markdown
     content:
       title: '📚 My Research'
@@ -62,7 +68,7 @@ sections:
       columns: 2
   - block: collection
     content:
-      title: Recent Publications
+      title: Publications
       text: ''
       filters:
         folders:
