@@ -21,5 +21,5 @@ jobs:
         with:
           feed-url: https://hugoblox.com/rss.xml
           readme-section: news
-          branch: main
+          branch: dev
           github_token: ${{ secrets.GITHUB_TOKEN }}
