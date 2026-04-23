@@ -21,36 +21,9 @@ bio: |
   rigor to build robust BI solutions and data architectures for enterprise leaders 
   like General Motors.
 
-  <div class="mt-4 pt-2 border-t border-gray-200 dark:border-gray-700">
-    <div class="flex items-center gap-3 mb-4">
-      <div class="flex-none flex items-center justify-center w-10 h-10 rounded-full border border-blue-600/30 bg-blue-100/10 dark:border-blue-400/30 dark:bg-blue-500/10">
-        <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 15l-2 5L9 9l11 1 5 2z"></path>
-          <circle cx="12" cy="12" r="10"></circle>
-        </svg>
-      </div>
-      <h3 class="text-2xl font-bold text-gray-900 dark:text-white m-0 tracking-tight" style="line-height: 1.2; display: flex; align-items: center;">
-        Core Certifications
-      </h3>
-    </div>
-    
-    <div class="ml-13">
-      <a href="https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/" 
-        target="_blank" 
-        class="block font-semibold text-blue-600 dark:text-blue-400 hover:underline text-lg">
-        Microsoft Certified: Power BI Data Analyst Associate
-      </a>
-      <p class="text-md mt-1 text-gray-600 dark:text-gray-400">
-        Credential ID: 
-        <a href="https://learn.microsoft.com/api/credentials/share/en-us/IsaacNeibaur/EEAD2C1408383F" 
-          target="_blank" 
-          class="font-mono font-bold text-primary-600 dark:text-primary-400">
-          PL-300
-        </a>
-        <span class="mx-2">•</span> Issued Dec 2025
-      </p>
-    </div>
-  </div>
+  {{< core_certifications >}}
+
+  {{< display_awards type="featured" >}}
 
 affiliations:
   - name: General Motors
@@ -172,26 +145,34 @@ languages:
 
 awards:
   - title: Hackathon team winner 
+    featured: true
+    rank: 1st Place
     awarder: General Motor's Geek Week
     date: "2022-11-01"
     summary: Team awarded for presenting a working demo of an interactive map for a manufacturing location.
     icon: hero/trophy
   - title: Debate team winner 
+    featured: true
+    rank: 1st Place
     awarder: General Motor's Geek Week
     date: "2024-06-01"
     summary: Team awarded for wining debate on why autonomous vehicles are the superior next technology.
     icon: hero/trophy
   - title: Secure Code Warrior Champion
+    featured: false
     awarder: General Motor's JEDI (Joint Educational Defense Initative)
     date: "2024-05-01"
     summary: Placed in the top three over 50 plus competitors from various roles at GM.
     icon: hero/trophy
   - title: Geek Week Overall Annual Winner!
+    featured: false
     awarder: General Motor's Geek Week
     date: "2022"
     summary: Awarded third place over company wide competition by earning a high sum of Geek Week points by the end of the year.
     icon: hero/trophy
   - title: Geek Week Overall Annual Winner!
+    featured: true
+    rank: 2nd Place
     awarder: General Motor's Geek Week
     date: "2024"
     summary: Awarded second place over company wide competition by earning a high sum of Geek Week points by the end of the year.
