@@ -21,13 +21,15 @@ bio: |
   rigor to build robust BI solutions and data architectures for enterprise leaders 
   like General Motors.
 
-  {{< display_list key="certifications" type="featured" header="Core Certifications" icon="🎓" >}}
-  {{< display_list key="awards" type="featured" header="Notable Awards" icon="🏆" >}}
+  {{< bio_grid >}}
+    {{< display_list key="certifications" type="featured" header="🎓 Core Certs" >}}
+    {{< display_list key="awards" type="featured" header="🏆 Notable Awards" >}}
+  {{< /bio_grid >}}
 
 affiliations:
   - name: General Motors
     url: /experience/#general-motors
-  - name: Cabrillo Coastal Insurance Agency
+  - name: Cabrillo Coastal General Insurance Agency
     url: /experience/#cabrillo-coastal
   - name: Pioneer Hi-Bred
     url: /experience/#pioneer
