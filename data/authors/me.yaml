@@ -21,9 +21,8 @@ bio: |
   rigor to build robust BI solutions and data architectures for enterprise leaders 
   like General Motors.
 
-  {{< core_certifications >}}
-
-  {{< display_awards type="featured" >}}
+  {{< display_list key="certifications" type="featured" header="Core Certifications" icon="🎓" >}}
+  {{< display_list key="awards" type="featured" header="Notable Awards" icon="🏆" >}}
 
 affiliations:
   - name: General Motors
@@ -178,3 +177,10 @@ awards:
     summary: Awarded second place over company wide competition by earning a high sum of Geek Week points by the end of the year.
     icon: hero/trophy
 
+certifications:
+  - title: "Microsoft Certified: Power BI Data Analyst Associate"
+    featured: true
+    id: "PL-300"
+    url: "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/"
+    verify_url: "https://learn.microsoft.com/api/credentials/share/en-us/IsaacNeibaur/EEAD2C1408383F"
+    date: "Dec 2025"
