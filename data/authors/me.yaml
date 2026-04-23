@@ -13,7 +13,15 @@ postnominals:
   - Master's
 status:
   icon: "🌱"
-role: Senior Business Intelligence Engineer Data Engineering & Automation
+role: |
+  {{< sidebar_title 
+      title="Senior Business Intelligence Engineer" 
+      subtitle="Data Engineering & Automation" >}}
+  
+  {{< sidebar_button 
+      text="Download CV / Resume" 
+      url="/uploads/Isaac_Neibaur_resume.pdf" 
+      icon="📄" >}}
 bio: |
   I specialize in turning raw complexity into clear business strategy. My journey 
   began in agricultural research, where I designed and managed experiments 
@@ -34,9 +42,7 @@ affiliations:
     url: /experience/#cabrillo-coastal
   - name: Pioneer Hi-Bred
     url: /experience/#pioneer
-# The "Button" simulation
-  - name: 📄 Download CV / Resume
-    url: /uploads/Isaac_Neibaur_resume.pdf
+
 links:
   - icon: at-symbol
     url: mailto:hello@isaacneibaur.com
@@ -53,7 +59,7 @@ links:
   - icon: custom/microsoft
     url: https://learn.microsoft.com/en-us/users/isaacneibaur
     label: Microsoft Learn
-  - icon: custom/credly
+  - icon: C
     url: https://www.credly.com/users/isaacneibaur
     label: Credly
 

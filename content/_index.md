@@ -17,8 +17,8 @@ sections:
       text: ''
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: Download CV
-        url: uploads/Isaac_Neibaur_resume.pdf
+        text:
+        url:
       headings:
         about: ''
         education: 'Education'
