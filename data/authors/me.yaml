@@ -8,6 +8,7 @@ name:
   alternate: ''  # Example: 王伟
   pronunciation: ''  # Example: Wáng Wěi
   pronouns: he/him
+  
 postnominals:
   - Master's
 status:
@@ -33,6 +34,9 @@ affiliations:
     url: /experience/#cabrillo-coastal
   - name: Pioneer Hi-Bred
     url: /experience/#pioneer
+# The "Button" simulation
+  - name: 📄 Download CV / Resume
+    url: /uploads/Isaac_Neibaur_resume.pdf
 links:
   - icon: at-symbol
     url: mailto:hello@isaacneibaur.com
@@ -52,6 +56,7 @@ links:
   - icon: custom/credly
     url: https://www.credly.com/users/isaacneibaur
     label: Credly
+
 interests:
   - Microsoft Fabric & Power BI
   - Data Engineering (SQL/Python)
