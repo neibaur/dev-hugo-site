@@ -15,13 +15,14 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: ''
+      show_education: false
       # Show a call-to-action button under your biography? (optional)
       button:
         text:
         url:
       headings:
         about: ''
-        education: 'Education'
+        education: ''
         interests: ''
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
