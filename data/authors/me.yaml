@@ -31,7 +31,7 @@ bio: |
   like General Motors.
 
   {{< bio_grid >}}
-    {{< display_list key="certifications" type="featured" header="🎓 Core Certs" >}}
+    {{< display_list key="certifications" type="featured" header="🎓 Core Certifications" >}}
     {{< display_list key="awards" type="featured" header="🏆 Notable Awards" >}}
   {{< /bio_grid >}}
 
