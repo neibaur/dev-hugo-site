@@ -14,6 +14,25 @@ sections:
     content:
       title:
       username: me
+  - block: tech-stack
+    content:
+      title: Tech Stack
+      categories:
+        - name: Data Engineering
+          items:
+            - name: "🐍 Python"
+            - name: "🗄️ SQL"
+            - name: "🌐 REST APIs"
+        - name: Business Intelligence
+          items:
+            - name: "📊 Power BI (DAX/M)"
+            - name: "⭐ Star Schema Modeling"
+            - name: "🤖 Automated Reporting"
+        - name: DevOps & Platforms
+          items:
+            - name: "☁️ Azure Databricks"
+            - name: "⚙️ GitHub Actions"
+            - name: "🧵 Microsoft Fabric"
   - block: work-experience
     content:
       username: me
