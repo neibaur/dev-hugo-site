@@ -10,9 +10,12 @@ main:
   - name: Experience
     url: experience/
     weight: 20
+  - name: Education & certifications
+    url: education/
+    weight: 30
   - name: Projects
     url: projects/
-    weight: 30
+    weight: 40
   - name: Contact
     url: 'mailto:hello@isaacneibaur.com'
     weight: 50
