@@ -15,6 +15,10 @@ sections:
       title: Certifications
       text: |
         {{< display_list key="certifications" type="all" header="🎓 Certifications" >}}
+  - block: resume-languages
+    content:
+      title: Languages
+      username: me
   - block: education
     content:
       username: me
