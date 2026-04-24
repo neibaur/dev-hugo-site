@@ -517,12 +517,13 @@
             {{ range $interests }}
             {{ $interest := strings.TrimSpace (printf "%v" .) }}
             {{ if $interest }}
-            <span class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
+            {{ $id := $interest | lower | replaceRE `\s+` `-` | replaceRE `[^a-z0-9-]` `` }}
+            <a href="/experience/#{{ $id }}" class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
                            hover:bg-primary-100 
                            dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
-                           transition-all duration-200 cursor-default">
+                           transition-all duration-200">
               {{ $interest | markdownify | emojify }}
-            </span>
+            </a>
             {{ end }}
             {{ end }}
           </div>
