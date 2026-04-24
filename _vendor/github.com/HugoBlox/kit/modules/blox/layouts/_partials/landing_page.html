@@ -5,6 +5,15 @@
 {{/* Use unified sections source */}}
 {{- $sections := partial "hbx/sections.html" . -}}
 
+{{/* Set page-level spacing if specified */}}
+{{- with $.Params.design.spacing -}}
+<style>
+  :root {
+    --hb-spacing-section: {{ . }};
+  }
+</style>
+{{- end -}}
+
 {{ range $index, $block := $sections }}
   {{/* Do not show sections intended only for the demo site. */}}
   {{ if or (not $block.demo) ($block.demo | and (eq (os.Getenv "HUGO_BLOX_DEMO") "true")) }}
