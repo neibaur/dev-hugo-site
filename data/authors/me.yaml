@@ -30,11 +30,6 @@ bio: |
   Today, I leverage this unique dual-domain expertise to build robust BI solutions and data 
   architectures for enterprise leaders like General Motors.
 
-  {{< bio_grid >}}
-    {{< display_list key="certifications" type="featured" header="🎓 Core Certifications" >}}
-    {{< display_list key="awards" type="featured" header="🏆 Notable Awards" >}}
-  {{< /bio_grid >}}
-
 affiliations:
   - name: General Motors
     url: /experience/#general-motors
@@ -195,13 +190,13 @@ awards:
     date: "2024-05-01"
     summary: Placed in the top three over 50 plus competitors from various roles at GM.
     icon: hero/trophy
-  - title: Geek Week Overall Annual Winner!
+  - title: Geek Week overall annual winner!
     featured: false
     awarder: General Motor's Geek Week
     date: "2022"
     summary: Awarded third place over company wide competition by earning a high sum of Geek Week points by the end of the year.
     icon: hero/trophy
-  - title: Geek Week Overall Annual Winner!
+  - title: Geek Week overall annual winner!
     featured: true
     rank: 2nd Place
     awarder: General Motor's Geek Week
