@@ -80,6 +80,7 @@ Output (dict):
 {{- $pronouns := $namePronouns | default $data.pronouns -}}
 {{- $userGroups := $data.user_groups -}}
 {{- $interests := $data.interests -}}
+{{- $ongoing := $data.ongoing -}}
 {{- $education := $data.education -}}
 {{- $experience := or $data.experience $data.work -}}
 {{- $skills := $data.skills -}}
@@ -119,6 +120,7 @@ Output (dict):
   "pronouns" $pronouns
   "user_groups" $userGroups
   "interests" $interests
+  "ongoing" $ongoing
   "education" $education
   "experience" $experience
   "skills" $skills

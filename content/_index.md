@@ -21,9 +21,10 @@ sections:
         text:
         url:
       headings:
-        about: ''
+        about: 'Professional Summary'
         education: ''
-        interests: 'Strategic Focus'
+        interests: ''
+        ongoing: "What I'm Working On"
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
@@ -38,4 +39,16 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: rounded # Options: circle (default), square, rounded
+
+  - block: markdown
+    content:
+      title: ''
+      text: |
+        {{< bio_grid >}}
+          {{< display_list key="certifications" type="featured" header="🎓 Core Certifications" >}}
+          {{< display_list key="awards" type="featured" header="🏆 Notable Awards" >}}
+        {{< /bio_grid >}}
+    design:
+      columns: 2
+      css_class: "wide-block"
 ---

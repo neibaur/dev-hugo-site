@@ -16,24 +16,17 @@ status:
 role: |
   {{< sidebar_title 
       title="Senior Business Intelligence Engineer" 
-      subtitle="Data Engineering & Automation" >}}
+      subtitle="specializing in Data Engineering, Automation, and Enterprise Analytics" >}}
   
   {{< sidebar_button 
       text="Download CV / Resume" 
       url="/uploads/Isaac_Neibaur_resume.pdf" 
       icon="📄" >}}
 bio: |
-  I specialize in turning raw complexity into clear business strategy. 
-  My career began in agricultural biotechnology, where I applied scientific rigor 
-  to large-scale genomic datasets to optimize crop yields. Transitioning into Software Engineering, 
-  I earned a Computer Science degree to bridge the gap between deep research and scalable technology. 
-  Today, I leverage this unique dual-domain expertise to build robust BI solutions and data 
-  architectures for enterprise leaders like General Motors.
-
-  {{< bio_grid >}}
-    {{< display_list key="certifications" type="featured" header="🎓 Core Certifications" >}}
-    {{< display_list key="awards" type="featured" header="🏆 Notable Awards" >}}
-  {{< /bio_grid >}}
+  I specialize in transforming complex data ecosystems into clear, actionable business strategy. 
+  With a foundation in agricultural biotechnology and a transition into software engineering, 
+  I bring a unique blend of scientific rigor and scalable technology expertise. I design and deliver enterprise BI solutions, 
+  data pipelines, and automation frameworks that enable leaders to make faster, data-driven decisions.
 
 affiliations:
   - name: General Motors
@@ -69,6 +62,11 @@ interests:
   - Operational Excellence & DataOps
   - Cloud Ecosystems (Azure)
   - Executive Decision Support
+
+ongoing:
+  - Microsoft Fabric (DP-600 / DP-700)
+  - Cost optimization strategies in Databricks workflows
+  - Slack + Python automation integrations
 
 education:
   - degree: BS Computer Science
@@ -108,13 +106,11 @@ experience:
       data models during a large-scale migration from Oracle to a Medallion Architecture in 
       Azure Databricks.
       {{< landing_anchor "operational-excellence-dataops" >}}
-      * Operational Excellence & DataOps: Orchestrated reporting workflows using GitHub Actions 
-      and Databricks to monitor and recover automated data deliveries, ensuring 99.9% uptime 
-      for business-critical feeds.
+      * Operational Excellence & DataOps: Achieved 99.9% uptime for business-critical data pipelines 
+      by orchestrating reporting workflows using GitHub Actions and Azure Databricks.
       {{< landing_anchor "executive-decision-support" >}}
-      * Executive Decision Support: Optimized complex SQL queries to translate raw operational 
-      data into actionable performance metrics for high-level stakeholders via Power BI 
-      and Paginated Reports.
+      * Executive Decision Support: Optimized complex SQL queries, reducing report load times by 
+      15% an in one instance by 90 % by implementing Threading in an Oracle connected Paginated Report.
       * Leadership & Culture: Served as an Asian Community Lead, coordinating professional 
       development for 500+ members, and acted as a DEI Lead to promote organizational 
       representation through data-driven advocacy.
@@ -130,8 +126,9 @@ experience:
       {{< landing_anchor "cabrillo-coastal" >}}Collaborated with executive leadership to 
       build dashboards and reports providing insights into call volumes and client metrics.
       {{< landing_anchor "cloud-ecosystems-azure" >}}
-      * Cloud Ecosystems: Managed the company’s comparative rater API and built Python/Selenium 
-      automation to stress-test cloud-based quote binding workflows.
+      * Cloud Ecosystems: Managed the company’s comparative rater API and Independently 
+      developed automation tools using Python and Selenium to simulate and validate quote 
+      binding workflows, improving testing coverage and reliability of client-facing systems.
       {{< landing_anchor "data-lifecycle-management" >}}
       * Data Lifecycle Management: Collaborated with executive leadership to overhaul 
       call-volume analytics, streamlining the data lifecycle from raw phone-tree logs to 
@@ -178,15 +175,16 @@ awards:
   - title: Hackathon team winner 
     featured: true
     rank: 1st Place
-    awarder: General Motor's Geek Week
+    awarder: General Motors Geek Week
     date: "2022-11-01"
     summary: Team awarded for presenting a working demo of an interactive map for a manufacturing location.
     icon: hero/trophy
   - title: Debate team winner 
     featured: true
     rank: 1st Place
-    awarder: General Motor's Geek Week
+    awarder: General Motors Geek Week
     date: "2024-06-01"
+    summary: Team awarded for winning debate on why autonomous vehicles are the superior next technology.
     summary: Team awarded for winning debate on why autonomous vehicles are the superior next technology.
     icon: hero/trophy
   - title: Secure Code Warrior Champion
@@ -194,17 +192,19 @@ awards:
     awarder: General Motor's JEDI (Joint Educational Defense Initiative)
     date: "2024-05-01"
     summary: Placed in the top three over 50+ competitors from various roles at GM.
+    summary: Placed in the top three over 50+ competitors from various roles at GM.
     icon: hero/trophy
-  - title: Geek Week Overall Annual Winner!
+  - title: Geek Week overall annual winner!
     featured: false
-    awarder: General Motor's Geek Week
+    awarder: General Motors Geek Week
     date: "2022"
     summary: Awarded third place over company-wide competition by earning a high sum of Geek Week points by the end of the year.
+    summary: Awarded third place over company-wide competition by earning a high sum of Geek Week points by the end of the year.
     icon: hero/trophy
-  - title: Geek Week Overall Annual Winner!
+  - title: Geek Week overall annual winner!
     featured: true
     rank: 2nd Place
-    awarder: General Motor's Geek Week
+    awarder: General Motors Geek Week
     date: "2024"
     summary: Awarded second place over company wide competition by earning a high sum of Geek Week points by the end of the year.
     icon: hero/trophy
