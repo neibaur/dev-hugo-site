@@ -98,23 +98,25 @@ experience:
     start: 2021-02-01
     end: 2025-12-31
     summary: |
-      {{< landing_anchor "gm" >}}Served as a technical lead and analytical bridge, 
-      translating complex operational data from Oracle and Azure Databricks into actionable 
-      insights for leadership. 
+      {{< landing_anchor "gm" >}}Served as an analytical bridge between operations,
+      data engineering, and leadership stakeholders, translating Oracle and Azure Databricks
+      data into reporting workflows for operational decisions.
       {{< landing_anchor "enterprise-data-strategy" >}}
-      * Enterprise Data Strategy: Led the design and testing of advanced star-schema semantic 
-      data models during a large-scale migration from Oracle to a Medallion Architecture in 
-      Azure Databricks.
+      * Enterprise Data Strategy: Supported design and validation of star-schema semantic
+      models during migration from Oracle reporting sources toward Medallion Architecture
+      patterns in Azure Databricks.
       {{< landing_anchor "operational-excellence-dataops" >}}
-      * Operational Excellence & DataOps: Achieved 99.9% uptime for business-critical data pipelines 
-      by orchestrating reporting workflows using GitHub Actions and Azure Databricks.
+      * Operational Excellence & DataOps: Maintained high-availability reporting workflows
+      for business-critical data pipelines using GitHub Actions and Azure Databricks.
       {{< landing_anchor "executive-decision-support" >}}
-      * Executive Decision Support: Optimized complex SQL queries, reducing report load times by 
-      15% an in one instance by 90 % by implementing Threading in an Oracle connected Paginated Report.
-      * Leadership & Culture: Served as an Asian Community Lead, coordinating professional 
-      development for 500+ members, and acted as a DEI Lead to promote organizational 
-      representation through data-driven advocacy.
-      * Technical Mentorship: Led a two-year security-focused small group utilizing Portswigger labs and spearheaded team participation in company-wide hackathons and debates.
+      * Executive Decision Support: Tuned SQL and reporting logic to improve performance,
+      including typical report-load reductions near 15% and one Oracle-connected paginated
+      report improvement near 90% through threaded processing.
+      * Leadership & Culture: Served as Asian Community Lead and DEI Lead, coordinating
+      professional development and representation-focused programming for a 500+ member
+      employee community.
+      * Technical Mentorship: Led a two-year security-focused study group using PortSwigger
+      labs and encouraged team participation in company hackathons and debate events.
     #   text: View Project
     #   url: /project/gm-analytics/
 
@@ -124,22 +126,25 @@ experience:
     end: 2021-01-31
     summary: |
       {{< landing_anchor "cabrillo-coastal" >}}Collaborated with executive leadership to 
-      build dashboards and reports providing insights into call volumes and client metrics.
+      build dashboards and reports that made call-volume and client-service metrics easier
+      to monitor and act on.
       {{< landing_anchor "cloud-ecosystems-azure" >}}
-      * Cloud Ecosystems: Managed the company’s comparative rater API and Independently 
-      developed automation tools using Python and Selenium to simulate and validate quote 
-      binding workflows, improving testing coverage and reliability of client-facing systems.
+      * Cloud Ecosystems: Managed the company's comparative rater API and independently
+      developed Python and Selenium automation to simulate and validate quote-binding
+      workflows, improving testing coverage for client-facing systems.
       {{< landing_anchor "data-lifecycle-management" >}}
-      * Data Lifecycle Management: Collaborated with executive leadership to overhaul 
-      call-volume analytics, streamlining the data lifecycle from raw phone-tree logs to 
-      leadership dashboards.
+      * Data Lifecycle Management: Streamlined the reporting path from raw phone-tree logs
+      to leadership dashboards, improving the usability of operational call analytics.
   - role: Senior Research Associate
     org: Pioneer Hi-Bred (Beijing, China)
     start: 2013-06-01
     end: 2015-06-30
     summary: | 
-      {{< landing_anchor "pioneer" >}}Acted as the primary technical liaison between the US corporate office and research sites in China and Australia.
-      * Deployed automated labeling and tracking solutions to modernize legacy hand-written laboratory methods.
+      {{< landing_anchor "pioneer" >}}Acted as a technical liaison between the US corporate
+      office and research sites in China and Australia, supporting consistent lab operations
+      across distributed teams.
+      * Deployed automated labeling and tracking workflows that reduced reliance on
+      hand-written laboratory methods and improved traceability.
 
 skills:
   - name: Technical Skills
