@@ -12,7 +12,7 @@ sections:
   - block: collection
     content:
       title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      text: A focused collection of recent portfolio projects and in-progress case studies demonstrating data engineering, dashboard development, automation, and cloud-integrated analytics. In-progress projects are included when they show real implementation progress.
       filters:
         folders:
           - projects
