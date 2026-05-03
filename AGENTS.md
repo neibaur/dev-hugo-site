@@ -15,6 +15,21 @@ Production is generated from this repo and deployed by GitHub Actions to [`neiba
 - Prefer trunk-based development with small, atomic commits.
 - Keep unrelated content, layout, dependency, and workflow changes in separate commits.
 
+## AI Agent Working Rules
+
+1. Inspect existing files before modifying.
+2. Make the smallest safe change.
+3. Preserve existing behavior unless asked to change it.
+4. Do not overwrite user work without checking diffs.
+5. Keep generated files minimal.
+6. Avoid premature abstractions.
+7. Do not invent external credentials, services, APIs, or paid tooling.
+8. Add TODOs only when useful and specific.
+9. Update documentation when setup, behavior, standards, or structure changes.
+10. Never commit secrets.
+11. Do not remove or simplify custom shortcodes, layouts, or structure unless explicitly instructed.
+12. Prefer small, scoped changes over large refactors.
+
 ## What To Edit
 
 - Authored content lives in `content/` and `data/authors/me.yaml`.
@@ -83,3 +98,16 @@ Production deploys are cross-repo:
 3. `neibaur/github.io` serves `isaacneibaur.com`.
 
 Any deployment or workflow change must account for that cross-repo publishing model.
+
+## Definition of Done
+
+A task is complete when:
+
+- Hugo builds locally with `hugo --gc --minify`.
+- Local validation commands (if defined) complete successfully.
+- Generated output is not committed.
+- No secrets are committed.
+- Custom shortcodes and Hugo Blox overrides are preserved.
+- Content changes are factual, current, and portfolio-specific.
+- Documentation is updated when setup, behavior, standards, or structure changes.
+- Changes are small, atomic, and reviewable.
