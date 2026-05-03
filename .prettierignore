@@ -23,6 +23,7 @@ static/
 HUGO_GUIDE.md
 LICENSE.md
 hugoblox.yaml
+.gitleaks.toml
 
 .hugo_build.lock
 hugo_stats.json

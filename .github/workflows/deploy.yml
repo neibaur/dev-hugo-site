@@ -1,12 +1,17 @@
 name: Deploy Hugo Site
+
 on:
   push:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout Source
         uses: actions/checkout@v4
@@ -14,23 +19,26 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Standard stable version
-          cache: 'npm'
+          node-version: 24
+          cache: pnpm
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.156.0'
           extended: true
 
-      - name: Build Site
-        run: hugo --gc --minify
+      - name: Build site
+        run: pnpm build
 
       - name: Deploy to Production Repo
         uses: peaceiris/actions-gh-pages@v4
