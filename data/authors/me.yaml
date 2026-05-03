@@ -187,19 +187,19 @@ awards:
     rank: 1st Place
     awarder: General Motor's Geek Week
     date: "2024-06-01"
-    summary: Team awarded for wining debate on why autonomous vehicles are the superior next technology.
+    summary: Team awarded for winning debate on why autonomous vehicles are the superior next technology.
     icon: hero/trophy
   - title: Secure Code Warrior Champion
     featured: false
-    awarder: General Motor's JEDI (Joint Educational Defense Initative)
+    awarder: General Motor's JEDI (Joint Educational Defense Initiative)
     date: "2024-05-01"
-    summary: Placed in the top three over 50 plus competitors from various roles at GM.
+    summary: Placed in the top three over 50+ competitors from various roles at GM.
     icon: hero/trophy
   - title: Geek Week Overall Annual Winner!
     featured: false
     awarder: General Motor's Geek Week
     date: "2022"
-    summary: Awarded third place over company wide competition by earning a high sum of Geek Week points by the end of the year.
+    summary: Awarded third place over company-wide competition by earning a high sum of Geek Week points by the end of the year.
     icon: hero/trophy
   - title: Geek Week Overall Annual Winner!
     featured: true
