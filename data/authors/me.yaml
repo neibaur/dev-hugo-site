@@ -179,12 +179,11 @@ awards:
     date: "2022-11-01"
     summary: Team awarded for presenting a working demo of an interactive map for a manufacturing location.
     icon: hero/trophy
-  - title: Debate team winner 
+  - title: Debate team winner
     featured: true
     rank: 1st Place
     awarder: General Motors Geek Week
     date: "2024-06-01"
-    summary: Team awarded for winning debate on why autonomous vehicles are the superior next technology.
     summary: Team awarded for winning debate on why autonomous vehicles are the superior next technology.
     icon: hero/trophy
   - title: Secure Code Warrior Champion
@@ -192,13 +191,11 @@ awards:
     awarder: General Motor's JEDI (Joint Educational Defense Initiative)
     date: "2024-05-01"
     summary: Placed in the top three over 50+ competitors from various roles at GM.
-    summary: Placed in the top three over 50+ competitors from various roles at GM.
     icon: hero/trophy
   - title: Geek Week overall annual winner!
     featured: false
     awarder: General Motors Geek Week
     date: "2022"
-    summary: Awarded third place over company-wide competition by earning a high sum of Geek Week points by the end of the year.
     summary: Awarded third place over company-wide competition by earning a high sum of Geek Week points by the end of the year.
     icon: hero/trophy
   - title: Geek Week overall annual winner!
