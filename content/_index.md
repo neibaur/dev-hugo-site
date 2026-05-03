@@ -23,7 +23,8 @@ sections:
       headings:
         about: 'Professional Summary'
         education: ''
-        interests: 'Strategic Focus'
+        interests: ''
+        ongoing: "What I'm Working On"
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:

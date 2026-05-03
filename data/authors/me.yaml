@@ -63,6 +63,11 @@ interests:
   - Cloud Ecosystems (Azure)
   - Executive Decision Support
 
+ongoing:
+  - Microsoft Fabric (DP-600 / DP-700)
+  - Cost optimization strategies in Databricks workflows
+  - Slack + Python automation integrations
+
 education:
   - degree: BS Computer Science
     institution: Oregon State University
@@ -174,7 +179,7 @@ awards:
     date: "2022-11-01"
     summary: Team awarded for presenting a working demo of an interactive map for a manufacturing location.
     icon: hero/trophy
-  - title: Debate team winner 
+  - title: Debate team winner
     featured: true
     rank: 1st Place
     awarder: General Motors Geek Week
@@ -183,7 +188,7 @@ awards:
     icon: hero/trophy
   - title: Secure Code Warrior Champion
     featured: false
-    awarder: General Motors JEDI (Joint Educational Defense Initative)
+    awarder: General Motor's JEDI (Joint Educational Defense Initiative)
     date: "2024-05-01"
     summary: Placed in the top three over 50+ competitors from various roles at GM.
     icon: hero/trophy

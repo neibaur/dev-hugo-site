@@ -502,8 +502,8 @@
         {{ if eq (printf "%T" $interests_heading_raw) "string" }}
           {{ $interests_heading_raw = strings.TrimSpace $interests_heading_raw }}
         {{ end }}
-        {{ if ne $interests_heading_raw "" }}
         <div>
+          {{ if ne $interests_heading_raw "" }}
           <div class="flex items-center gap-4 mb-8">
             <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
               {{ partial "functions/get_icon" (dict "name" "sparkles" "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}
@@ -514,6 +514,7 @@
             {{ end }}
             <h3 class="text-xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $interests_heading | markdownify }}</h3>
           </div>
+          {{ end }}
           <div class="flex flex-wrap gap-3">
             {{ range $interests }}
             {{ $interest := strings.TrimSpace (printf "%v" .) }}
@@ -530,6 +531,47 @@
           </div>
         </div>
         {{ end }}
+
+        {{/* Ongoing Work Section */}}
+        {{ $ongoing_raw := $profile.ongoing }}
+        {{ $ongoing := slice }}
+        {{ if reflect.IsSlice $ongoing_raw }}
+          {{ $ongoing = $ongoing_raw }}
+        {{ else if eq (printf "%T" $ongoing_raw) "string" }}
+          {{ $ongoing = slice $ongoing_raw }}
+        {{ end }}
+        {{ if gt (len $ongoing) 0 }}
+        {{ $ongoing_heading_raw := index $headings "ongoing" }}
+        {{ if eq (printf "%T" $ongoing_heading_raw) "string" }}
+          {{ $ongoing_heading_raw = strings.TrimSpace $ongoing_heading_raw }}
+        {{ end }}
+        <div class="mt-10">
+          {{ if ne $ongoing_heading_raw "" }}
+          <div class="flex items-center gap-4 mb-8">
+            <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
+              {{ partial "functions/get_icon" (dict "name" "sparkles" "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}
+            </div>
+            {{ $ongoing_heading := "What I'm Working On" }}
+            {{ if ne $ongoing_heading_raw "" }}
+              {{ $ongoing_heading = $ongoing_heading_raw }}
+            {{ end }}
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $ongoing_heading | markdownify }}</h3>
+          </div>
+          {{ end }}
+          <ul class="space-y-2 list-disc list-inside !ml-7" style="list-style-type: disc; margin-left: 2rem;">
+            {{ range $ongoing }}
+            {{ $item := strings.TrimSpace (printf "%v" .) }}
+            {{ if $item }}
+            {{ $id := $item | lower | replaceRE `\s+` `-` | replaceRE `[^a-z0-9-]` `` }}
+            <li>
+              <a href="/experience/#{{ $id }}" class="text-base font-medium text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                {{ $item | markdownify | emojify }}
+              </a>
+            </li>
+            {{ end }}
+            {{ end }}
+          </ul>
+        </div>
         {{ end }}
       </div>
     </div>
