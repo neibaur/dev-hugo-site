@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "pagefind": "^1.4.0",
-    "preact": "^10.27.2"
+    "preact": "^10.27.3"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.1",
