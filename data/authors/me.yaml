@@ -15,8 +15,8 @@ status:
   icon: "🌱"
 role: |
   {{< sidebar_title 
-      title="Senior Business Intelligence Engineer" 
-      subtitle="specializing in Data Engineering, Automation, and Enterprise Analytics" >}}
+      title="Software Engineer & Data Platform Developer" 
+      subtitle="specializing in Cloud Automation, DevSecOps, and Analytics Platforms" >}}
   
   {{< sidebar_button 
       text="Download CV / Resume" 
@@ -57,16 +57,25 @@ links:
     label: Credly
 
 interests:
-  - Enterprise Data Strategy
-  - Data Lifecycle Management
-  - Operational Excellence & DataOps
-  - Cloud Ecosystems (Azure)
-  - Executive Decision Support
+  - Python Automation
+  - Terraform & IaC
+  - CI/CD Pipelines
+  - GitHub Actions
+  - Data Engineering
+  - Power BI & Analytics
+  - Cloudflare Automation
+  - Kubernetes & Docker
+  - Databricks Workflows
+  - API Development
+  - DevSecOps
+  - Platform Reliability
 
 ongoing:
-  - Microsoft Fabric (DP-600 / DP-700)
-  - Cost optimization strategies in Databricks workflows
-  - Slack + Python automation integrations
+  - Cloudflare governance and remediation platform using Terraform, GitHub Actions, and Python
+  - Public 100-day engineering initiative documenting cloud infrastructure and data platform development
+  - NHTSA analytics platform using API ingestion, medallion-style architecture, Supabase, and Power BI
+  - DevSecOps workflows with CodeQL, Dependabot, automated validation, and CI/CD governance
+  - Dashboard engineering projects using Power BI, Looker Studio, Astro, Hugo, and Python visualization tools
 
 education:
   - degree: BS Computer Science

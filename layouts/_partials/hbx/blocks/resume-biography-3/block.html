@@ -32,6 +32,20 @@
   {{ $show_education = $show_education_design_raw }}
 {{ end }}
 
+{{/* Control whether the Ongoing Work section is rendered. */}}
+{{ $show_ongoing := true }}
+{{ $show_ongoing_raw := index $content "show_ongoing" }}
+{{ if eq (printf "%T" $show_ongoing_raw) "bool" }}
+  {{ $show_ongoing = $show_ongoing_raw }}
+{{ end }}
+
+{{/* Control whether interest pills link to experience anchors. */}}
+{{ $link_interests := true }}
+{{ $link_interests_raw := index $content "link_interests" }}
+{{ if eq (printf "%T" $link_interests_raw) "bool" }}
+  {{ $link_interests = $link_interests_raw }}
+{{ end }}
+
 {{/* Hide Education on the home page only. */}}
 {{ $page_is_home := false }}
 {{ if and $page $page.IsHome }}
@@ -520,12 +534,12 @@
             {{ $interest := strings.TrimSpace (printf "%v" .) }}
             {{ if $interest }}
             {{ $id := $interest | lower | replaceRE `\s+` `-` | replaceRE `[^a-z0-9-]` `` }}
-            <a href="/experience/#{{ $id }}" class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
-                           hover:bg-primary-100 
+            {{ if $link_interests }}<a href="/experience/#{{ $id }}"{{ else }}<span{{ end }} class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
+                           {{ if $link_interests }}hover:bg-primary-100 
                            dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
-                           transition-all duration-200">
+                           transition-all duration-200{{ end }}">
               {{ $interest | markdownify | emojify }}
-            </a>
+            {{ if $link_interests }}</a>{{ else }}</span>{{ end }}
             {{ end }}
             {{ end }}
           </div>
@@ -540,7 +554,7 @@
         {{ else if eq (printf "%T" $ongoing_raw) "string" }}
           {{ $ongoing = slice $ongoing_raw }}
         {{ end }}
-        {{ if gt (len $ongoing) 0 }}
+        {{ if and $show_ongoing (gt (len $ongoing) 0) }}
         {{ $ongoing_heading_raw := index $headings "ongoing" }}
         {{ if eq (printf "%T" $ongoing_heading_raw) "string" }}
           {{ $ongoing_heading_raw = strings.TrimSpace $ongoing_heading_raw }}
