@@ -46,5 +46,3 @@ Design notes:
 - Terraform and Python separate declarative infrastructure validation from API-driven audit logic.
 - Secrets and real configuration inputs stay out of mock validation paths.
 - CodeQL, Dependabot, Gitleaks, and branch protection support repository governance and operational reliability.
-
-Last updated: May 2026.
