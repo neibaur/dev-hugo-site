@@ -39,6 +39,13 @@
   {{ $show_ongoing = $show_ongoing_raw }}
 {{ end }}
 
+{{/* Control whether compact credentials and recognition are rendered in the hero panel. */}}
+{{ $show_proof_points := false }}
+{{ $show_proof_points_raw := index $content "show_proof_points" }}
+{{ if eq (printf "%T" $show_proof_points_raw) "bool" }}
+  {{ $show_proof_points = $show_proof_points_raw }}
+{{ end }}
+
 {{/* Control whether interest pills link to experience anchors. */}}
 {{ $link_interests := true }}
 {{ $link_interests_raw := index $content "link_interests" }}
@@ -544,6 +551,68 @@
             {{ end }}
           </div>
         </div>
+        {{ end }}
+
+        {{ if $show_proof_points }}
+        {{ $author_data := index site.Data.authors $author }}
+        {{ $certifications_raw := $profile.certifications }}
+        {{ if and (not $certifications_raw) $author_data }}
+          {{ $certifications_raw = index $author_data "certifications" }}
+        {{ end }}
+        {{ $awards_raw := $profile.awards }}
+        {{ if and (not $awards_raw) $author_data }}
+          {{ $awards_raw = index $author_data "awards" }}
+        {{ end }}
+        {{ $proof_points := slice }}
+
+        {{ if reflect.IsSlice $certifications_raw }}
+          {{ range $certifications_raw }}
+            {{ if and (reflect.IsMap .) (index . "featured") }}
+              {{ $title := strings.TrimSpace (printf "%v" (index . "title")) }}
+              {{ $url := "" }}
+              {{ with index . "url" }}{{ $url = strings.TrimSpace (printf "%v" .) }}{{ end }}
+              {{ if $title }}
+                {{ $proof_points = $proof_points | append (dict "title" $title "meta" "Certification" "url" $url) }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ if reflect.IsSlice $awards_raw }}
+          {{ range $awards_raw }}
+            {{ if and (reflect.IsMap .) (index . "featured") }}
+              {{ $title := strings.TrimSpace (printf "%v" (index . "title")) }}
+              {{ $rank := "" }}
+              {{ with index . "rank" }}{{ $rank = strings.TrimSpace (printf "%v" .) }}{{ end }}
+              {{ $awarder := "" }}
+              {{ with index . "awarder" }}{{ $awarder = strings.TrimSpace (printf "%v" .) }}{{ end }}
+              {{ $meta := $rank | default $awarder }}
+              {{ if $title }}
+                {{ $proof_points = $proof_points | append (dict "title" $title "meta" $meta) }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ if gt (len $proof_points) 0 }}
+        <div class="hero-proof-points mt-8">
+          <p class="hero-proof-label">Credentials & Recognition</p>
+          <div class="hero-proof-grid">
+            {{ range first 4 $proof_points }}
+              {{ $proof_url := "" }}
+              {{ with index . "url" }}{{ $proof_url = . }}{{ end }}
+              <div class="hero-proof-item">
+                {{ if $proof_url }}
+                  <a href="{{ $proof_url | safeURL }}" target="_blank" rel="noopener">{{ index . "title" | markdownify | emojify }}</a>
+                {{ else }}
+                  <span>{{ index . "title" | markdownify | emojify }}</span>
+                {{ end }}
+                {{ with index . "meta" }}<small>{{ . | markdownify | emojify }}</small>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
         {{ end }}
 
         {{/* Ongoing Work Section */}}

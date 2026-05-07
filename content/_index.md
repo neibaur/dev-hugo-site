@@ -17,6 +17,7 @@ sections:
       text: ''
       show_education: false
       show_ongoing: false
+      show_proof_points: true
       link_interests: false
       # Show a call-to-action button under your biography? (optional)
       button:
@@ -84,7 +85,7 @@ sections:
           </article>
         </div>
     design:
-      css_class: "wide-block"
+      css_class: "wide-block landing-wide landing-featured"
 
   - block: markdown
     content:
@@ -96,22 +97,10 @@ sections:
             <span>Public notes on engineering projects, delivery tradeoffs, observability, and dashboard development.</span>
           </a>
           <a class="landing-link-card" href="/blog/">
-            <strong>Portfolio Blog</strong>
+            <strong>Portfolio Engineering Notes</strong>
             <span>Technical writing and project notes published on this site.</span>
           </a>
         </div>
     design:
-      css_class: "wide-block"
-
-  - block: markdown
-    content:
-      title: ''
-      text: |
-        {{< bio_grid >}}
-          {{< display_list key="certifications" type="featured" header="Core Certifications" >}}
-          {{< display_list key="awards" type="featured" header="Leadership & Recognition" >}}
-        {{< /bio_grid >}}
-    design:
-      columns: 2
-      css_class: "wide-block compact-recognition"
+      css_class: "wide-block landing-wide landing-notes"
 ---
