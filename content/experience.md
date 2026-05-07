@@ -16,23 +16,39 @@ sections:
       username: me
   - block: tech-stack
     content:
-      title: Tech Stack
+      title: Skills & Technologies
       categories:
-        - name: Data Engineering
+        - name: Languages & Scripting
           items:
-            - name: "🐍 Python"
-            - name: "🗄️ SQL"
-            - name: "🌐 REST APIs"
-        - name: Business Intelligence
+            - name: Python
+            - name: SQL
+        - name: Cloud & DevOps
           items:
-            - name: "📊 Power BI (DAX/M)"
-            - name: "⭐ Star Schema Modeling"
-            - name: "🤖 Automated Reporting"
-        - name: DevOps & Platforms
+            - name: Terraform
+            - name: GitHub Actions
+            - name: Docker
+            - name: Kubernetes
+            - name: Cloudflare
+            - name: CI/CD
+        - name: Data Platforms
           items:
-            - name: "☁️ Azure Databricks"
-            - name: "⚙️ GitHub Actions"
-            - name: "🧵 Microsoft Fabric"
+            - name: Azure Databricks
+            - name: PostgreSQL
+            - name: Supabase
+            - name: ETL Pipelines
+        - name: Analytics & BI
+          items:
+            - name: Power BI
+            - name: Looker Studio
+            - name: Cognos
+            - name: Tableau
+        - name: Engineering Practices
+          items:
+            - name: REST APIs
+            - name: Infrastructure as Code
+            - name: DevSecOps
+            - name: Agile
+            - name: Automated Testing
   - block: work-experience
     content:
       username: me

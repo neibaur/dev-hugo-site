@@ -23,10 +23,14 @@ role: |
       url="/uploads/Isaac_Neibaur_resume.pdf" 
       icon="📄" >}}
 bio: |
-  I specialize in transforming complex data ecosystems into clear, actionable business strategy. 
-  With a foundation in agricultural biotechnology and a transition into software engineering, 
-  I bring a unique blend of scientific rigor and scalable technology expertise. I design and deliver enterprise BI solutions, 
-  data pipelines, and automation frameworks that enable leaders to make faster, data-driven decisions.
+  Software Engineer and Data Platform Developer with experience building cloud automation,
+  analytics platforms, APIs, and operational data solutions. Skilled in Python, SQL,
+  Terraform, GitHub Actions, Databricks, Kubernetes, and Power BI with a focus on
+  automation, reliability, Infrastructure as Code, and scalable data workflows.
+
+  Combines enterprise operational leadership experience at General Motors with active
+  independent engineering projects involving cloud infrastructure, CI/CD, DevSecOps,
+  and dashboard engineering.
 
 affiliations:
   - name: General Motors
@@ -57,18 +61,14 @@ links:
     label: Credly
 
 interests:
-  - Python Automation
-  - Terraform & IaC
-  - CI/CD Pipelines
-  - GitHub Actions
+  - Software Engineering
+  - Platform Engineering
+  - Cloud Automation
   - Data Engineering
-  - Power BI & Analytics
-  - Cloudflare Automation
-  - Kubernetes & Docker
-  - Databricks Workflows
-  - API Development
+  - Infrastructure as Code
+  - CI/CD
   - DevSecOps
-  - Platform Reliability
+  - Analytics Platforms
 
 ongoing:
   - Cloudflare governance and remediation platform using Terraform, GitHub Actions, and Python

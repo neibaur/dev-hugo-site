@@ -97,6 +97,18 @@
   font-size: 1.25rem;
 }
 
+.compact-recognition .mt-4 {
+  margin-top: 0;
+}
+
+.compact-recognition .mb-4 {
+  margin-bottom: 0.75rem;
+}
+
+.compact-recognition p {
+  font-size: 0.85rem;
+}
+
 .compact-recognition .ml-12 {
   margin-left: 0;
 }
