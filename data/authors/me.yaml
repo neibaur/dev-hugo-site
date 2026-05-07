@@ -15,30 +15,34 @@ status:
   icon: "🌱"
 role: |
   {{< sidebar_title 
-      title="Senior Business Intelligence Engineer" 
-      subtitle="specializing in Data Engineering, Automation, and Enterprise Analytics" >}}
+      title="Software Engineer & Data Platform Developer" 
+      subtitle="Platform Engineering & Cloud Automation" >}}
   
   {{< sidebar_button 
       text="Download CV / Resume" 
       url="/uploads/Isaac_Neibaur_resume.pdf" 
       icon="📄" >}}
 bio: |
-  I specialize in transforming complex data ecosystems into clear, actionable business strategy. 
-  With a foundation in agricultural biotechnology and a transition into software engineering, 
-  I bring a unique blend of scientific rigor and scalable technology expertise. I design and deliver enterprise BI solutions, 
-  data pipelines, and automation frameworks that enable leaders to make faster, data-driven decisions.
+  Software Engineer and Data Platform Developer with experience building cloud automation,
+  analytics platforms, APIs, and operational data solutions. Skilled in Python, SQL,
+  Terraform, GitHub Actions, Databricks, Kubernetes, and Power BI with a focus on
+  automation, reliability, Infrastructure as Code, and scalable data workflows.
+
+  Combines enterprise operational leadership experience at General Motors with active
+  independent engineering projects involving cloud infrastructure, CI/CD, DevSecOps,
+  and dashboard engineering.
 
 affiliations:
   - name: General Motors
     url: /experience/#general-motors
-  - name: Cabrillo Coastal General Insurance Agency
+  - name: Cabrillo
     url: /experience/#cabrillo-coastal
   - name: Pioneer Hi-Bred
     url: /experience/#pioneer
 
 links:
   - icon: at-symbol
-    url: mailto:hello@isaacneibaur.com
+    url: mailto:isaac@isaacneibaur.com
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/neibaur
@@ -52,35 +56,44 @@ links:
   - icon: custom/microsoft
     url: https://learn.microsoft.com/en-us/users/isaacneibaur
     label: Microsoft Learn
-  - icon: C
+  - icon: custom/credly
     url: https://www.credly.com/users/isaacneibaur
     label: Credly
 
 interests:
-  - Enterprise Data Strategy
-  - Data Lifecycle Management
-  - Operational Excellence & DataOps
-  - Cloud Ecosystems (Azure)
-  - Executive Decision Support
+  - Software Engineering
+  - Platform Engineering
+  - Cloud Automation
+  - Data Engineering
+  - Infrastructure as Code
+  - CI/CD
+  - DevSecOps
+  - Analytics Platforms
 
 ongoing:
-  - Microsoft Fabric (DP-600 / DP-700)
-  - Cost optimization strategies in Databricks workflows
-  - Slack + Python automation integrations
+  - Cloudflare governance and remediation platform using Terraform, GitHub Actions, and Python
+  - Public 100-day engineering initiative documenting cloud infrastructure and data platform development
+  - NHTSA analytics platform using API ingestion, medallion-style architecture, Supabase, and Power BI
+  - DevSecOps workflows with CodeQL, Dependabot, automated validation, and CI/CD governance
+  - Dashboard engineering projects using Power BI, Looker Studio, Astro, Hugo, and Python visualization tools
 
 education:
-  - degree: BS Computer Science
+  - degree: Post-Baccalaureate Computer Science
     institution: Oregon State University
     start: 2016-01-04
     end: 2019-12-13
+    summary: |
+      Computer science post-baccalaureate coursework supporting software engineering,
+      systems thinking, and automation practice. GPA: 3.9.
   - degree: MS Agronomy (Plant Biotechnology)
     institution: University of Florida
     start: 2005-08-24
     end: 2007-08-14
     summary: |
-      Focused on early, novel transgenic successes in salt-resistant turfgrass.
+      Graduate research in plant biotechnology and experimental analysis, including
+      early transgenic work in salt-resistant turfgrass. GPA: 3.8.
     button:
-      text: Download Dissertation
+      text: View Dissertation
       url: /uploads/Isaac_Neibaur_Master_Thesis.pdf
       icon: hero/arrow-down-tray
   - degree: BS Botany
@@ -93,30 +106,71 @@ education:
     end: 2003-12-20
 
 experience:
+  - role: Founder / Independent Engineer
+    org: 100DayDash & Cloud Automation Projects
+    start: 2026-01-01
+    end:
+    tags:
+      - Python
+      - Terraform
+      - GitHub Actions
+      - Cloudflare API
+      - DevSecOps
+    summary: |
+      {{< landing_anchor "independent-engineering" >}}Building and publicly documenting
+      production-style dashboards, APIs, and cloud-native data platforms using real-world
+      datasets through [GitHub](https://github.com/neibaur) and
+      [100daydash.blog](https://100daydash.blog/).
+      {{< landing_anchor "cloud-automation" >}}
+      * Developed a Cloudflare governance and remediation platform using Python,
+      Terraform, GitHub Actions, and the Cloudflare API to audit domain security posture
+      and optionally remediate configuration drift.
+      {{< landing_anchor "infrastructure-as-code" >}}
+      * Implemented Terraform workflows for validation, scheduled audits, secure secret
+      handling, and CI/CD governance.
+      {{< landing_anchor "devsecops" >}}
+      * Added repository safeguards including Dependabot, CodeQL, secret scanning,
+      branch protection workflows, linting, pytest, and CI checks.
+      {{< landing_anchor "data-platform-development" >}}
+      * Designing reusable data workflows involving APIs, ETL pipelines, medallion-style
+      architecture, Supabase, PostgreSQL, and dashboard integrations.
+      {{< landing_anchor "public-engineering-work" >}}
+      * Publishing technical documentation and engineering notes at 100daydash.blog
+      covering platform engineering, cloud infrastructure, automation, analytics, and
+      software development practices.
+    button:
+      text: View 100DayDash Blog
+      url: https://100daydash.blog/
+      icon: hero/arrow-top-right-on-square
+
   - role: Software Engineer (Operations & Reliability)
     org: General Motors
     start: 2021-02-01
     end: 2025-12-31
+    tags:
+      - Python
+      - SQL
+      - Databricks
+      - DataStage
+      - Power BI
     summary: |
-      {{< landing_anchor "gm" >}}Served as an analytical bridge between operations,
-      data engineering, and leadership stakeholders, translating Oracle and Azure Databricks
-      data into reporting workflows for operational decisions.
-      {{< landing_anchor "enterprise-data-strategy" >}}
-      * Enterprise Data Strategy: Supported design and validation of star-schema semantic
-      models during migration from Oracle reporting sources toward Medallion Architecture
-      patterns in Azure Databricks.
-      {{< landing_anchor "operational-excellence-dataops" >}}
-      * Operational Excellence & DataOps: Maintained high-availability reporting workflows
-      for business-critical data pipelines using GitHub Actions and Azure Databricks.
-      {{< landing_anchor "executive-decision-support" >}}
-      * Executive Decision Support: Tuned SQL and reporting logic to improve performance,
-      including typical report-load reductions near 15% and one Oracle-connected paginated
-      report improvement near 90% through threaded processing.
-      * Leadership & Culture: Served as Asian Community Lead and DEI Lead, coordinating
-      professional development and representation-focused programming for a 500+ member
-      employee community.
-      * Technical Mentorship: Led a two-year security-focused study group using PortSwigger
-      labs and encouraged team participation in company hackathons and debate events.
+      {{< landing_anchor "general-motors" >}}Served as IT product owner and technical lead, translating
+      complex operational data from enterprise platforms into actionable reporting and
+      analytics for high-level stakeholders.
+      {{< landing_anchor "sql-analytics" >}}
+      * Wrote and optimized SQL against large relational datasets for analytics, legacy
+      reports, end-user extracts, Power BI, and Microsoft Paginated Reports.
+      {{< landing_anchor "api-development" >}}
+      * Developed Python APIs and automation workflows integrating Oracle, Cognos,
+      Power BI, and scheduled reporting systems to reduce manual operational effort.
+      {{< landing_anchor "operational-reliability" >}}
+      * Managed automated enterprise reporting pipelines using GitHub Actions,
+      Azure Databricks, and DataStage with monitoring, recovery, and production support
+      processes.
+      * Prioritized technical debt, reliability improvements, and stakeholder requirements
+      within sprint planning processes.
+      * Led cross-functional learning and employee engagement initiatives involving
+      cybersecurity labs, mentoring, and company-wide collaboration.
     #   text: View Project
     #   url: /project/gm-analytics/
 
@@ -124,42 +178,75 @@ experience:
     org: Cabrillo Coastal General Insurance Agency
     start: 2016-06-01
     end: 2021-01-31
+    tags:
+      - Python
+      - Selenium
+      - Postman
+      - APIs
+      - Dashboards
     summary: |
-      {{< landing_anchor "cabrillo-coastal" >}}Collaborated with executive leadership to 
-      build dashboards and reports that made call-volume and client-service metrics easier
-      to monitor and act on.
-      {{< landing_anchor "cloud-ecosystems-azure" >}}
-      * Cloud Ecosystems: Managed the company's comparative rater API and independently
-      developed Python and Selenium automation to simulate and validate quote-binding
-      workflows, improving testing coverage for client-facing systems.
-      {{< landing_anchor "data-lifecycle-management" >}}
-      * Data Lifecycle Management: Streamlined the reporting path from raw phone-tree logs
-      to leadership dashboards, improving the usability of operational call analytics.
+      {{< landing_anchor "cabrillo-coastal" >}}Built operational dashboards and reporting
+      workflows that helped leadership monitor call volumes, client-service activity, and
+      phone-tree performance.
+      {{< landing_anchor "cabrillo-api-automation" >}}
+      * Served as primary technical contact for the company's comparative rater API
+      integration and developed Postman, Python, and Selenium tooling to generate, bind,
+      and validate insurance quotes.
+      * Improved reporting paths from client-service systems into dashboard-ready metrics
+      for leadership review.
   - role: Senior Research Associate
     org: Pioneer Hi-Bred (Beijing, China)
     start: 2013-06-01
     end: 2015-06-30
+    tags:
+      - Workflow Automation
+      - Training
+      - Distributed Teams
     summary: | 
       {{< landing_anchor "pioneer" >}}Acted as a technical liaison between the US corporate
       office and research sites in China and Australia, supporting consistent lab operations
       across distributed teams.
       * Deployed automated labeling and tracking workflows that reduced reliance on
       hand-written laboratory methods and improved traceability.
+      * Delivered software training and technical support across distributed research sites.
+
+  - role: Research Associate
+    org: Pioneer Hi-Bred
+    start: 2008-01-01
+    end: 2013-05-31
+    tags:
+      - Spotfire
+      - Sensor Data
+      - Dashboards
+    summary: |
+      {{< landing_anchor "pioneer-research-associate" >}}Designed and implemented an
+      environmental monitoring workflow that integrated sensor data into Spotfire
+      dashboards for operational analysis.
 
 skills:
   - name: Technical Skills
     items:
       - label: Python Automation
         level: 5
+      - label: SQL
+        level: 5
       - label: Power BI (DAX/M)
         level: 5
       - label: Azure Databricks
         level: 4
-  - name: Data Architecture & Governance
+  - name: Platform & Reliability
     items:
-      - label: Stakeholder Management
+      - label: GitHub Actions
         level: 5
-      - label: Conference Presentations
+      - label: Terraform & IaC
+        level: 4
+      - label: Kubernetes & Docker
+        level: 3
+  - name: Engineering Practices
+    items:
+      - label: API Development
+        level: 4
+      - label: DevSecOps
         level: 4
       - label: Technical Documentation
         level: 4
@@ -177,14 +264,14 @@ languages:
     
 
 awards:
-  - title: Hackathon team winner 
+  - title: Hackathon Team Winner
     featured: true
     rank: 1st Place
     awarder: General Motors Geek Week
     date: "2022-11-01"
     summary: Team awarded for presenting a working demo of an interactive map for a manufacturing location.
     icon: hero/trophy
-  - title: Debate team winner
+  - title: Debate Team Winner
     featured: true
     rank: 1st Place
     awarder: General Motors Geek Week
@@ -197,13 +284,13 @@ awards:
     date: "2024-05-01"
     summary: Placed in the top three over 50+ competitors from various roles at GM.
     icon: hero/trophy
-  - title: Geek Week overall annual winner!
+  - title: Geek Week Overall Annual Winner
     featured: false
     awarder: General Motors Geek Week
     date: "2022"
     summary: Awarded third place over company-wide competition by earning a high sum of Geek Week points by the end of the year.
     icon: hero/trophy
-  - title: Geek Week overall annual winner!
+  - title: Geek Week Overall Annual Winner
     featured: true
     rank: 2nd Place
     awarder: General Motors Geek Week
@@ -218,3 +305,4 @@ certifications:
     url: "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/"
     verify_url: "https://learn.microsoft.com/api/credentials/share/en-us/IsaacNeibaur/EEAD2C1408383F"
     date: "Dec 2025"
+    summary: "Covers Power BI modeling, semantic models, report design, and analytics delivery for dashboard engineering."

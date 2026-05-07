@@ -16,6 +16,9 @@ sections:
       username: me
       text: ''
       show_education: false
+      show_ongoing: false
+      show_proof_points: true
+      link_interests: true
       # Show a call-to-action button under your biography? (optional)
       button:
         text:
@@ -24,7 +27,7 @@ sections:
         about: 'Professional Summary'
         education: ''
         interests: ''
-        ongoing: "What I'm Working On"
+        ongoing: ''
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
@@ -42,13 +45,58 @@ sections:
 
   - block: markdown
     content:
-      title: ''
+      title: Featured Projects
       text: |
-        {{< bio_grid >}}
-          {{< display_list key="certifications" type="featured" header="🎓 Core Certifications" >}}
-          {{< display_list key="awards" type="featured" header="🏆 Notable Awards" >}}
-        {{< /bio_grid >}}
+        <div class="landing-card-grid">
+          <a class="landing-card" href="/projects/cloudflare-governance-platform/">
+            <div>
+              <h3>Cloudflare Governance Platform</h3>
+              <p>Infrastructure governance platform for automated security auditing, remediation workflows, and policy enforcement.</p>
+            </div>
+            <div class="landing-tags">
+              <span>Terraform</span>
+              <span>Python</span>
+              <span>Policy Automation</span>
+            </div>
+          </a>
+
+          <a class="landing-card" href="/projects/nhtsa-recall-intelligence/">
+            <div>
+              <h3>NHTSA Data Platform</h3>
+              <p>Vehicle safety analytics platform for API ingestion, medallion-style modeling, relational storage, and dashboard-ready insights.</p>
+            </div>
+            <div class="landing-tags">
+              <span>APIs</span>
+              <span>Data Modeling</span>
+              <span>Analytics</span>
+            </div>
+          </a>
+
+          <a class="landing-card" href="/projects/100daydash-engineering-blog/">
+            <div>
+              <h3>100DayDash Engineering Blog</h3>
+              <p>Public engineering journal documenting automation, platform delivery, observability, and dashboard development.</p>
+            </div>
+            <div class="landing-tags">
+              <span>Technical Writing</span>
+              <span>Observability</span>
+              <span>Automation</span>
+            </div>
+          </a>
+        </div>
     design:
-      columns: 2
-      css_class: "wide-block"
+      css_class: "wide-block landing-wide landing-featured"
+
+  - block: markdown
+    content:
+      title: Engineering Notes
+      text: |
+        <div class="landing-link-row landing-link-row-single">
+          <a class="landing-link-card" href="https://100daydash.blog/">
+            <strong>100DayDash Blog</strong>
+            <span>Public engineering journal documenting platform delivery, CI/CD governance, observability, automation, and dashboard development.</span>
+          </a>
+        </div>
+    design:
+      css_class: "wide-block landing-wide landing-notes"
 ---

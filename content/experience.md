@@ -10,37 +10,68 @@ design:
 
 # Page sections
 sections:
-  - block: resume-skills
+  - block: markdown
     content:
-      title:
-      username: me
-  - block: tech-stack
-    content:
-      title: Tech Stack
-      categories:
-        - name: Data Engineering
-          items:
-            - name: "🐍 Python"
-            - name: "🗄️ SQL"
-            - name: "🌐 REST APIs"
-        - name: Business Intelligence
-          items:
-            - name: "📊 Power BI (DAX/M)"
-            - name: "⭐ Star Schema Modeling"
-            - name: "🤖 Automated Reporting"
-        - name: DevOps & Platforms
-          items:
-            - name: "☁️ Azure Databricks"
-            - name: "⚙️ GitHub Actions"
-            - name: "🧵 Microsoft Fabric"
+      title: ''
+      text: |
+        <h2 class="experience-section-title">Technical Stack</h2>
+
+        <div class="experience-stack-list">
+          <div>
+            <strong>Languages & Automation:</strong>
+            <span>Python &middot; SQL &middot; REST APIs &middot; Postman &middot; Selenium</span>
+          </div>
+          <div>
+            <strong>Cloud & Platform Engineering:</strong>
+            <span>Terraform &middot; GitHub Actions &middot; Docker &middot; Kubernetes &middot; Cloudflare &middot; CI/CD</span>
+          </div>
+          <div>
+            <strong>Data & Analytics Platforms:</strong>
+            <span>Databricks &middot; PostgreSQL &middot; Supabase &middot; Power BI &middot; ETL Pipelines</span>
+          </div>
+          <div>
+            <strong>Operational Tooling:</strong>
+            <span>Git &middot; Linux &middot; Jira &middot; ServiceNow &middot; Agile</span>
+          </div>
+        </div>
+    design:
+      css_class: "wide-block experience-stack"
+
   - block: work-experience
     content:
       username: me
     design:
       # Hugo date format
       date_format: 'January 2006'
-  - block: resume-awards
+
+  - block: markdown
     content:
-      title: Awards
-      username: me
+      title: ''
+      text: |
+        <h2 class="experience-section-title">Recognition</h2>
+
+        <ul class="experience-recognition-list">
+          <li>
+            <strong>Secure Code Warrior Top Placement</strong>
+            <span>GM JEDI, 2024</span>
+            <p>Placed in the top three in a GM JEDI secure coding challenge with 50+ participants.</p>
+          </li>
+          <li>
+            <strong>Geek Week Debate Team Winner</strong>
+            <span>General Motors Geek Week, 2024</span>
+            <p>Recognized as part of a team debate competition during General Motors Geek Week.</p>
+          </li>
+          <li>
+            <strong>Geek Week Overall Annual Top Placement</strong>
+            <span>General Motors Geek Week, 2022 and 2024</span>
+            <p>Earned annual top placement recognition based on overall Geek Week participation and points.</p>
+          </li>
+          <li>
+            <strong>Hackathon Team Winner</strong>
+            <span>General Motors Geek Week, 2022</span>
+            <p>Won a team hackathon focused on rapid problem solving and technical collaboration.</p>
+          </li>
+        </ul>
+    design:
+      css_class: "wide-block experience-recognition"
 ---

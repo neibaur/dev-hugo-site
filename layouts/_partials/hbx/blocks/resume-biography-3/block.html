@@ -32,6 +32,27 @@
   {{ $show_education = $show_education_design_raw }}
 {{ end }}
 
+{{/* Control whether the Ongoing Work section is rendered. */}}
+{{ $show_ongoing := true }}
+{{ $show_ongoing_raw := index $content "show_ongoing" }}
+{{ if eq (printf "%T" $show_ongoing_raw) "bool" }}
+  {{ $show_ongoing = $show_ongoing_raw }}
+{{ end }}
+
+{{/* Control whether compact credentials and recognition are rendered in the hero panel. */}}
+{{ $show_proof_points := false }}
+{{ $show_proof_points_raw := index $content "show_proof_points" }}
+{{ if eq (printf "%T" $show_proof_points_raw) "bool" }}
+  {{ $show_proof_points = $show_proof_points_raw }}
+{{ end }}
+
+{{/* Control whether interest pills link to experience anchors. */}}
+{{ $link_interests := true }}
+{{ $link_interests_raw := index $content "link_interests" }}
+{{ if eq (printf "%T" $link_interests_raw) "bool" }}
+  {{ $link_interests = $link_interests_raw }}
+{{ end }}
+
 {{/* Hide Education on the home page only. */}}
 {{ $page_is_home := false }}
 {{ if and $page $page.IsHome }}
@@ -248,6 +269,7 @@
           {{ else if eq (printf "%T" $affiliations_raw) "string" }}
             {{ $affiliations = slice $affiliations_raw }}
           {{ end }}
+          {{ $affiliation_items := slice }}
           {{ range $affiliations }}
             {{ $aff_name := "" }}
             {{ $aff_url := "" }}
@@ -265,8 +287,16 @@
             {{ end }}
             {{ $aff_name = strings.TrimSpace $aff_name }}
             {{ $aff_url = strings.TrimSpace $aff_url }}
-            {{ if $aff_name }}
-              <p class="text-lg text-gray-700 dark:text-gray-300">
+            {{ if $aff_name }}{{ $affiliation_items = $affiliation_items | append (dict "name" $aff_name "url" $aff_url) }}{{ end }}
+          {{ end }}
+          {{ if gt (len $affiliation_items) 0 }}
+          <div class="hero-employers">
+            <span>Experience at</span>
+            <p>
+              {{ range $idx, $affiliation := $affiliation_items }}
+                {{ if gt $idx 0 }}<span class="hero-employer-separator">&middot;</span>{{ end }}
+                {{ $aff_name := index $affiliation "name" }}
+                {{ $aff_url := index $affiliation "url" }}
                 {{ if $aff_url }}
                   {{ $link := $aff_url }}
                   {{ $scheme := (urls.Parse $link).Scheme }}
@@ -279,12 +309,13 @@
                   {{ else if in (slice "http" "https") $scheme }}
                     {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
                   {{ end }}
-                  <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">{{ $aff_name }}</a>
+                  <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>{{ $aff_name }}</a>
                 {{ else }}
-                  {{ $aff_name }}
+                  <span>{{ $aff_name }}</span>
                 {{ end }}
-              </p>
-            {{ end }}
+              {{ end }}
+            </p>
+          </div>
           {{ end }}
         </div>
 
@@ -520,16 +551,89 @@
             {{ $interest := strings.TrimSpace (printf "%v" .) }}
             {{ if $interest }}
             {{ $id := $interest | lower | replaceRE `\s+` `-` | replaceRE `[^a-z0-9-]` `` }}
-            <a href="/experience/#{{ $id }}" class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
-                           hover:bg-primary-100 
+            {{ $interest_url := "/experience/" }}
+            {{ if in (slice "cloud-automation" "infrastructure-as-code" "devsecops") $id }}
+              {{ $interest_url = "/projects/cloudflare-governance-platform/" }}
+            {{ else if in (slice "data-engineering" "analytics-platforms") $id }}
+              {{ $interest_url = "/projects/nhtsa-recall-intelligence/" }}
+            {{ else if in (slice "software-engineering" "platform-engineering" "cicd") $id }}
+              {{ $interest_url = "/experience/" }}
+            {{ else }}
+              {{ $interest_url = printf "/experience/#%s" $id }}
+            {{ end }}
+            {{ if $link_interests }}<a href="{{ $interest_url }}"{{ else }}<span{{ end }} class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
+                           {{ if $link_interests }}hover:bg-primary-100 
                            dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
-                           transition-all duration-200">
+                           transition-all duration-200{{ end }}">
               {{ $interest | markdownify | emojify }}
-            </a>
+            {{ if $link_interests }}</a>{{ else }}</span>{{ end }}
             {{ end }}
             {{ end }}
           </div>
         </div>
+        {{ end }}
+
+        {{ if $show_proof_points }}
+        {{ $author_data := index site.Data.authors $author }}
+        {{ $certifications_raw := $profile.certifications }}
+        {{ if and (not $certifications_raw) $author_data }}
+          {{ $certifications_raw = index $author_data "certifications" }}
+        {{ end }}
+        {{ $awards_raw := $profile.awards }}
+        {{ if and (not $awards_raw) $author_data }}
+          {{ $awards_raw = index $author_data "awards" }}
+        {{ end }}
+        {{ $proof_points := slice }}
+
+        {{ if reflect.IsSlice $certifications_raw }}
+          {{ range $certifications_raw }}
+            {{ if and (reflect.IsMap .) (index . "featured") }}
+              {{ $title := strings.TrimSpace (printf "%v" (index . "title")) }}
+              {{ $url := "" }}
+              {{ with index . "url" }}{{ $url = strings.TrimSpace (printf "%v" .) }}{{ end }}
+              {{ if $title }}
+                {{ $proof_points = $proof_points | append (dict "title" $title "meta" "Certification" "url" $url) }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ if reflect.IsSlice $awards_raw }}
+          {{ range $awards_raw }}
+            {{ if and (reflect.IsMap .) (index . "featured") }}
+              {{ $title := strings.TrimSpace (printf "%v" (index . "title")) }}
+              {{ $rank := "" }}
+              {{ with index . "rank" }}{{ $rank = strings.TrimSpace (printf "%v" .) }}{{ end }}
+              {{ $awarder := "" }}
+              {{ with index . "awarder" }}{{ $awarder = strings.TrimSpace (printf "%v" .) }}{{ end }}
+              {{ $meta := $rank | default $awarder }}
+              {{ if $title }}
+                {{ $proof_points = $proof_points | append (dict "title" $title "meta" $meta) }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ if gt (len $proof_points) 0 }}
+        <div class="hero-proof-points mt-8">
+          <p class="hero-proof-label">Credentials & Recognition</p>
+          <div class="hero-proof-grid">
+            {{ range first 4 $proof_points }}
+              {{ $proof_url := "" }}
+              {{ with index . "url" }}{{ $proof_url = . }}{{ end }}
+              {{ $proof_meta := index . "meta" }}
+              <div class="hero-proof-item {{ if eq $proof_meta "Certification" }}hero-proof-cert{{ end }}">
+                {{ if $proof_url }}
+                  <a href="{{ $proof_url | safeURL }}" target="_blank" rel="noopener">{{ index . "title" | markdownify | emojify }}</a>
+                {{ else }}
+                  <span>{{ index . "title" | markdownify | emojify }}</span>
+                {{ end }}
+                {{ with $proof_meta }}<small>{{ . | markdownify | emojify }}</small>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
         {{ end }}
 
         {{/* Ongoing Work Section */}}
@@ -540,7 +644,7 @@
         {{ else if eq (printf "%T" $ongoing_raw) "string" }}
           {{ $ongoing = slice $ongoing_raw }}
         {{ end }}
-        {{ if gt (len $ongoing) 0 }}
+        {{ if and $show_ongoing (gt (len $ongoing) 0) }}
         {{ $ongoing_heading_raw := index $headings "ongoing" }}
         {{ if eq (printf "%T" $ongoing_heading_raw) "string" }}
           {{ $ongoing_heading_raw = strings.TrimSpace $ongoing_heading_raw }}
