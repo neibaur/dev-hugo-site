@@ -18,7 +18,7 @@ sections:
       show_education: false
       show_ongoing: false
       show_proof_points: true
-      link_interests: false
+      link_interests: true
       # Show a call-to-action button under your biography? (optional)
       button:
         text:
@@ -48,7 +48,7 @@ sections:
       title: Featured Projects
       text: |
         <div class="landing-card-grid">
-          <article class="landing-card">
+          <a class="landing-card" href="/projects/cloudflare-governance-platform/">
             <div>
               <h3>Cloudflare Governance Platform</h3>
               <p>Infrastructure governance platform for automated security auditing, remediation workflows, and policy enforcement.</p>
@@ -58,11 +58,11 @@ sections:
               <span>Python</span>
               <span>Policy Automation</span>
             </div>
-          </article>
+          </a>
 
-          <article class="landing-card">
+          <a class="landing-card" href="/projects/nhtsa-recall-intelligence/">
             <div>
-              <h3><a href="/projects/nhtsa-recall-intelligence/">NHTSA Data Platform</a></h3>
+              <h3>NHTSA Data Platform</h3>
               <p>Vehicle safety analytics platform for API ingestion, medallion-style modeling, relational storage, and dashboard-ready insights.</p>
             </div>
             <div class="landing-tags">
@@ -70,11 +70,11 @@ sections:
               <span>Data Modeling</span>
               <span>Analytics</span>
             </div>
-          </article>
+          </a>
 
-          <article class="landing-card">
+          <a class="landing-card" href="/projects/100daydash-engineering-blog/">
             <div>
-              <h3><a href="https://100daydash.blog/">100DayDash Engineering Blog</a></h3>
+              <h3>100DayDash Engineering Blog</h3>
               <p>Public engineering journal documenting automation, platform delivery, observability, and dashboard development.</p>
             </div>
             <div class="landing-tags">
@@ -82,23 +82,19 @@ sections:
               <span>Observability</span>
               <span>Automation</span>
             </div>
-          </article>
+          </a>
         </div>
     design:
       css_class: "wide-block landing-wide landing-featured"
 
   - block: markdown
     content:
-      title: Latest Engineering Notes
+      title: Engineering Notes
       text: |
-        <div class="landing-link-row">
+        <div class="landing-link-row landing-link-row-single">
           <a class="landing-link-card" href="https://100daydash.blog/">
             <strong>100DayDash Blog</strong>
-            <span>Public notes on engineering projects, delivery tradeoffs, observability, and dashboard development.</span>
-          </a>
-          <a class="landing-link-card" href="/blog/">
-            <strong>Portfolio Engineering Notes</strong>
-            <span>Technical writing and project notes published on this site.</span>
+            <span>Public engineering journal documenting platform delivery, CI/CD governance, observability, automation, and dashboard development.</span>
           </a>
         </div>
     design:

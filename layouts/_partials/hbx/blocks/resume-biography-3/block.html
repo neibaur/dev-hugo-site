@@ -551,7 +551,17 @@
             {{ $interest := strings.TrimSpace (printf "%v" .) }}
             {{ if $interest }}
             {{ $id := $interest | lower | replaceRE `\s+` `-` | replaceRE `[^a-z0-9-]` `` }}
-            {{ if $link_interests }}<a href="/experience/#{{ $id }}"{{ else }}<span{{ end }} class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
+            {{ $interest_url := "/experience/" }}
+            {{ if in (slice "cloud-automation" "infrastructure-as-code" "devsecops") $id }}
+              {{ $interest_url = "/projects/cloudflare-governance-platform/" }}
+            {{ else if in (slice "data-engineering" "analytics-platforms") $id }}
+              {{ $interest_url = "/projects/nhtsa-recall-intelligence/" }}
+            {{ else if in (slice "software-engineering" "platform-engineering" "cicd") $id }}
+              {{ $interest_url = "/experience/" }}
+            {{ else }}
+              {{ $interest_url = printf "/experience/#%s" $id }}
+            {{ end }}
+            {{ if $link_interests }}<a href="{{ $interest_url }}"{{ else }}<span{{ end }} class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
                            {{ if $link_interests }}hover:bg-primary-100 
                            dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
                            transition-all duration-200{{ end }}">
