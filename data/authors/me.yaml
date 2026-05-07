@@ -108,53 +108,67 @@ experience:
     org: 100DayDash & Cloud Automation Projects
     start: 2026-01-01
     end:
+    tags:
+      - Python
+      - Terraform
+      - GitHub Actions
+      - Cloudflare API
+      - DevSecOps
     summary: |
       {{< landing_anchor "independent-engineering" >}}Building and publicly documenting
       production-style dashboards, APIs, and cloud-native data platforms using real-world
-      datasets.
+      datasets through [GitHub](https://github.com/neibaur) and
+      [100daydash.blog](https://100daydash.blog/).
       {{< landing_anchor "cloud-automation" >}}
-      * Cloud Automation: Developed a Cloudflare governance and remediation platform using
-      Python, Terraform, GitHub Actions, and the Cloudflare API to audit domain security
-      posture and optionally remediate configuration drift.
+      * Developed a Cloudflare governance and remediation platform using Python,
+      Terraform, GitHub Actions, and the Cloudflare API to audit domain security posture
+      and optionally remediate configuration drift.
       {{< landing_anchor "infrastructure-as-code" >}}
-      * Infrastructure as Code: Implemented Terraform workflows with automated validation,
-      scheduled audits, secure secret handling, and GitHub Actions CI/CD.
+      * Implemented Terraform workflows with automated validation, scheduled audits,
+      secure secret handling, and GitHub Actions CI/CD.
       {{< landing_anchor "devsecops" >}}
-      * DevSecOps: Added repository governance practices including Dependabot, CodeQL,
-      secret scanning, branch protection workflows, linting, pytest, and CI checks.
+      * Added repository governance practices including Dependabot, CodeQL, secret
+      scanning, branch protection workflows, linting, pytest, and CI checks.
       {{< landing_anchor "data-platform-development" >}}
-      * Data Platform Development: Designing reusable data workflows involving APIs, ETL
-      pipelines, medallion-style architecture, Supabase, PostgreSQL, and dashboard
-      integrations.
+      * Designing reusable data workflows involving APIs, ETL pipelines, medallion-style
+      architecture, Supabase, PostgreSQL, and dashboard integrations.
       {{< landing_anchor "public-engineering-work" >}}
-      * Public Engineering Work: Publishing technical documentation and engineering notes
-      at 100daydash.blog covering platform engineering, cloud infrastructure, automation,
-      analytics, and software development practices.
+      * Publishing technical documentation and engineering notes at 100daydash.blog
+      covering platform engineering, cloud infrastructure, automation, analytics, and
+      software development practices.
+    button:
+      text: Read 100DayDash
+      url: https://100daydash.blog/
+      icon: hero/arrow-top-right-on-square
 
   - role: Software Engineer (Operations & Reliability)
     org: General Motors
     start: 2021-02-01
     end: 2025-12-31
+    tags:
+      - Python
+      - SQL
+      - Databricks
+      - DataStage
+      - Power BI
     summary: |
       {{< landing_anchor "general-motors" >}}Served as IT product owner and technical lead, translating
       complex operational data from enterprise platforms into actionable reporting and
       analytics for high-level stakeholders.
       {{< landing_anchor "sql-analytics" >}}
-      * SQL & Analytics: Wrote and optimized SQL against large relational datasets for
-      analytics, legacy reports, end-user extracts, Power BI, and Microsoft Paginated
-      Reports.
+      * Wrote and optimized SQL against large relational datasets for analytics, legacy
+      reports, end-user extracts, Power BI, and Microsoft Paginated Reports.
       {{< landing_anchor "api-development" >}}
-      * API Development & Automation: Developed Python APIs and automation workflows
-      integrating Oracle, Cognos, Power BI, and scheduled reporting systems to reduce
-      manual operational effort.
+      * Developed Python APIs and automation workflows integrating Oracle, Cognos,
+      Power BI, and scheduled reporting systems to reduce manual operational effort.
       {{< landing_anchor "operational-reliability" >}}
-      * Operational Reliability: Managed automated enterprise reporting pipelines using
-      GitHub Actions, Azure Databricks, and DataStage with monitoring, recovery, and
-      production support processes.
-      * Agile Delivery: Prioritized technical debt, reliability improvements, and
-      stakeholder requirements within sprint planning processes.
-      * Technical Leadership: Led cross-functional learning and employee engagement
-      initiatives involving cybersecurity labs, mentoring, and company-wide collaboration.
+      * Managed automated enterprise reporting pipelines using GitHub Actions,
+      Azure Databricks, and DataStage with monitoring, recovery, and production support
+      processes.
+      * Prioritized technical debt, reliability improvements, and stakeholder requirements
+      within sprint planning processes.
+      * Led cross-functional learning and employee engagement initiatives involving
+      cybersecurity labs, mentoring, and company-wide collaboration.
     #   text: View Project
     #   url: /project/gm-analytics/
 
@@ -162,20 +176,30 @@ experience:
     org: Cabrillo Coastal General Insurance Agency
     start: 2016-06-01
     end: 2021-01-31
+    tags:
+      - Python
+      - Selenium
+      - Postman
+      - APIs
+      - Dashboards
     summary: |
       {{< landing_anchor "cabrillo-coastal" >}}Built operational dashboards and reporting
       workflows that helped leadership monitor call volumes, client-service activity, and
       phone-tree performance.
       {{< landing_anchor "cabrillo-api-automation" >}}
-      * API & Test Automation: Served as primary technical contact for the company's
-      comparative rater API integration and developed Postman, Python, and Selenium tooling
-      to generate, bind, and validate insurance quotes.
-      * Operational Analytics: Improved reporting paths from client-service systems into
-      dashboard-ready metrics for leadership review.
+      * Served as primary technical contact for the company's comparative rater API
+      integration and developed Postman, Python, and Selenium tooling to generate, bind,
+      and validate insurance quotes.
+      * Improved reporting paths from client-service systems into dashboard-ready metrics
+      for leadership review.
   - role: Senior Research Associate
     org: Pioneer Hi-Bred (Beijing, China)
     start: 2013-06-01
     end: 2015-06-30
+    tags:
+      - Workflow Automation
+      - Training
+      - Distributed Teams
     summary: | 
       {{< landing_anchor "pioneer" >}}Acted as a technical liaison between the US corporate
       office and research sites in China and Australia, supporting consistent lab operations
@@ -188,6 +212,10 @@ experience:
     org: Pioneer Hi-Bred
     start: 2008-01-01
     end: 2013-05-31
+    tags:
+      - Spotfire
+      - Sensor Data
+      - Dashboards
     summary: |
       {{< landing_anchor "pioneer-research-associate" >}}Designed and implemented an
       environmental monitoring workflow that integrated sensor data into Spotfire

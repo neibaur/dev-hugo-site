@@ -10,59 +10,52 @@ design:
 
 # Page sections
 sections:
-  - block: resume-skills
+  - block: markdown
     content:
-      title: Engineering Capabilities
-      username: me
-  - block: tech-stack
-    content:
-      title: Skills & Technologies
-      categories:
-        - name: Languages & Scripting
-          items:
-            - name: Python
-            - name: SQL
-        - name: Cloud & DevOps
-          items:
-            - name: Terraform
-            - name: GitHub Actions
-            - name: Docker
-            - name: Kubernetes
-            - name: Cloudflare
-            - name: CI/CD
-        - name: Data & Analytics
-          items:
-            - name: Power BI
-            - name: Azure Databricks
-            - name: PostgreSQL
-            - name: Supabase
-            - name: ETL Pipelines
-            - name: Cognos
-            - name: Tableau
-        - name: Tools & Platforms
-          items:
-            - name: Git
-            - name: Jira
-            - name: ServiceNow
-            - name: Linux
-            - name: Selenium
-            - name: Postman
-            - name: DataStage
-        - name: Engineering Practices
-          items:
-            - name: REST APIs
-            - name: Infrastructure as Code
-            - name: DevSecOps
-            - name: Agile
-            - name: Automated Testing
+      title: ''
+      text: |
+        <h2 class="experience-section-title">Technical Stack</h2>
+
+        <div class="experience-stack-list">
+          <div>
+            <strong>Languages & Automation</strong>
+            <span>Python &middot; SQL &middot; REST APIs &middot; Postman &middot; Selenium</span>
+          </div>
+          <div>
+            <strong>Cloud & Platform Engineering</strong>
+            <span>Terraform &middot; GitHub Actions &middot; Docker &middot; Kubernetes &middot; Cloudflare &middot; CI/CD</span>
+          </div>
+          <div>
+            <strong>Data & Analytics Platforms</strong>
+            <span>Databricks &middot; PostgreSQL &middot; Supabase &middot; Power BI &middot; ETL Pipelines</span>
+          </div>
+          <div>
+            <strong>Operational Tooling</strong>
+            <span>Git &middot; Linux &middot; Jira &middot; ServiceNow &middot; Agile</span>
+          </div>
+        </div>
+    design:
+      css_class: "wide-block experience-stack"
+
   - block: work-experience
     content:
       username: me
     design:
       # Hugo date format
       date_format: 'January 2006'
-  - block: resume-awards
+
+  - block: markdown
     content:
-      title: Awards
-      username: me
+      title: ''
+      text: |
+        <h2 class="experience-section-title">Recognition</h2>
+
+        <ul class="experience-recognition-list">
+          <li><strong>Secure Code Warrior Top Placement</strong><span>GM JEDI, 2024</span></li>
+          <li><strong>Geek Week Debate Team Winner</strong><span>General Motors Geek Week, 2024</span></li>
+          <li><strong>Geek Week Overall Annual Top Placement</strong><span>General Motors Geek Week, 2022 and 2024</span></li>
+          <li><strong>Hackathon Team Winner</strong><span>General Motors Geek Week, 2022</span></li>
+        </ul>
+    design:
+      css_class: "wide-block experience-recognition"
 ---
