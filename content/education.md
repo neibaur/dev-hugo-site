@@ -16,8 +16,6 @@ sections:
       text: |
         <h2 class="education-section-title">Certifications</h2>
 
-        <p class="education-section-intro">Current credential supporting analytics platform delivery, dashboard engineering, and reliable data products.</p>
-
         {{< display_list key="certifications" type="all" header="" >}}
     design:
       css_class: "wide-block education-certifications"

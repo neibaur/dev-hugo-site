@@ -256,15 +256,6 @@
   color: rgb(243 244 246);
 }
 
-.education-section-intro {
-  max-width: 60ch;
-  color: rgb(75 85 99);
-}
-
-.dark .education-section-intro {
-  color: rgb(209 213 219);
-}
-
 .display-list-items {
   display: grid;
   gap: 1rem;
@@ -411,6 +402,7 @@ a.display-list-title:hover {
 .education-language-list {
   display: grid;
   gap: 0.65rem;
+  max-width: 42rem;
 }
 
 .education-language-list div {

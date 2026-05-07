@@ -305,4 +305,4 @@ certifications:
     url: "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/"
     verify_url: "https://learn.microsoft.com/api/credentials/share/en-us/IsaacNeibaur/EEAD2C1408383F"
     date: "Dec 2025"
-    summary: "Validates Power BI data modeling, semantic model development, report design, and analytics delivery practices used in dashboard engineering and data product reliability."
+    summary: "Covers Power BI modeling, semantic models, report design, and analytics delivery for dashboard engineering."
